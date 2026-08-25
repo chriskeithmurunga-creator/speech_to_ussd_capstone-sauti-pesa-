@@ -1,9 +1,10 @@
-<img width="1536" height="1024" alt="WhatsApp Image 2026-08-24 at 17 43 02" src="https://github.com/user-attachments/assets/ea8c0ac2-b7cf-4507-86e4-238862e1c6ab" />
+
 
 # Speech-to-USSD
 
 A speech-to-USSD pipeline that converts Swahili voice commands into USSD menu navigation.  
 Built for mobile money services (M-Pesa) in East Africa.
+<img width="1536" height="1024" alt="WhatsApp Image 2026-08-24 at 17 43 02" src="https://github.com/user-attachments/assets/ea8c0ac2-b7cf-4507-86e4-238862e1c6ab" />
 
 ## Pipeline
 
