@@ -1,3 +1,4 @@
+<img width="1920" height="1080" alt="Screenshot from 2026-08-24 15-58-11" src="https://github.com/user-attachments/assets/e4c162ec-8bd0-43a6-b12b-78d150cfdfeb" />
 
 
 # Speech-to-USSD
@@ -5,8 +6,6 @@
 A speech-to-USSD pipeline that converts Swahili voice commands into USSD menu navigation.  
 Built for mobile money services (M-Pesa) in East Africa.
 
-
-<img width="1536" height="1024" alt="WhatsApp Image 2026-08-24 at 17 43 02" src="https://github.com/user-attachments/assets/ea8c0ac2-b7cf-4507-86e4-238862e1c6ab" />
 
 
 
@@ -35,6 +34,12 @@ speech-to-ussd/
 ## Usage
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.tx
 python main.py --audio sample.wav
 ```
+
+<img width="1536" height="1024" alt="WhatsApp Image 2026-08-24 at 17 43 02" src="https://github.com/user-attachments/assets/ea8c0ac2-b7cf-4507-86e4-238862e1c6ab" />
+
+
+
+
