@@ -1,0 +1,6 @@
+openai-whisper
+sounddevice
+scikit-learn
+joblib
+numpy
+pandas

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+*.pkl
+*.wav
+*.mp3
+.DS_Store
+models/embeddings/
+data/processed/
+data/raw/audio/
+data/raw/transcripts/
