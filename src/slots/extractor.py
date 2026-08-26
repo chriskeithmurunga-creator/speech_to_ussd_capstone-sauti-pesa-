@@ -8,7 +8,7 @@ SLOT_PATTERNS = {
     "amount": r"(\d+[.,]?\d*)\s*(?:shillings?|ksh|tzs|usd)?",
     "phone": r"(\+?\d{10,13})",
     "account": r"(?:account\s*)?(\d{6,12})",
-    "name": r"(?:name\s+(?:is\s+)?)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)",
+    "name": r"(?:to|for)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)",
 }
 
 

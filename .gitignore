@@ -8,4 +8,7 @@ __pycache__/
 models/embeddings/
 data/processed/
 data/raw/audio/
-data/raw/transcripts/
+data/raw/transcripts/venv/
+__pychache__
+*.pyc
+venv/

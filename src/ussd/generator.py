@@ -14,8 +14,9 @@ def generate_response(intent, slots, status="success"):
         balance = slots.get("amount", "0")
         response["ussd_menu"] = f"Your current balance is {balance} TZS."
     elif intent == "send_money":
+        recipient = slots.get("name") or slots.get("phone") or "recipient"
         response["ussd_menu"] = (
-            f"Send {slots.get('amount', '0')} TZS to {slots.get('phone', 'recipient')}?\n"
+            f"Send {slots.get('amount', '0')} TZS to {recipient}?\n"
             "1. Yes\n2. No"
         )
     elif intent == "airtime":
