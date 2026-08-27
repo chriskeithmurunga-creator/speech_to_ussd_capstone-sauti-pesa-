@@ -9,3 +9,4 @@ models/embeddings/
 data/processed/
 data/raw/audio/
 data/raw/transcripts/
+data/raw/data_broadcastnews_sw.tar.bz2

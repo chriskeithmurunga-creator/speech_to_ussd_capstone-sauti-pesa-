@@ -1,0 +1,1001 @@
+id,transcript,intent,amount,recipient,service,ussd_sequence,is_synthetic
+syn_0916,Niaje Weka elfu moja kwa 0798765432,SEND_MONEY,1000,0798765432,,*334# -> 1 -> 0798765432 -> 1000,True
+syn_0571,Weka cash Ksh 500 hapa brathe,SEND_MONEY,500,brathe,,*334# -> 1 -> brathe -> 500,True
+syn_0569,Buy bundles za mbao kwa 0712345678,BUY_BUNDLES,20,0712345678,,*334# -> 3 -> 2 -> 20,True
+syn_0697,Send airtime ya soo mbili,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0591,Tuma bob mbao kwa shosh,SEND_MONEY,20,shosh,,*334# -> 1 -> shosh -> 20,True
+syn_0590,Lipa bill ya data Ksh 50,PAY_BILL,50,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 50,True
+syn_0357,Tuma chapaa soo tano airtime line hii,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0683,Nataka kuangalia balance kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0893,Balance ni gani kwa data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0685,Lipia Zuku elfu 1500,PAY_BILL,1500,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 1500,True
+syn_0546,Tuma chapaa soo tano direct kwa 0712345678,SEND_MONEY,500,0712345678,,*334# -> 1 -> 0712345678 -> 500,True
+syn_0243,Check salio KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0195,Lipa bill ya M-Pesa Ksh 2000,PAY_BILL,2000,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 2000,True
+syn_0050,Paybill KPLC amount 50,PAY_BILL,50,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 50,True
+syn_0950,Lipa bill ya M-Pesa Ksh 50,PAY_BILL,50,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 50,True
+syn_0780,Lipia Safaricom elfu 50,PAY_BILL,50,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 50,True
+syn_0338,Niambie salio langu la token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0130,Lipa bill ya KPLC Ksh 2000,PAY_BILL,2000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 2000,True
+syn_0564,Niongeze token za elfu moja,BUY_BUNDLES,1000,,token,*334# -> 3 -> 2 -> 1000,True
+syn_0781,Tuma punch direct kwa 0712345678,SEND_MONEY,100,0712345678,,*334# -> 1 -> 0712345678 -> 100,True
+syn_0115,Lipia net elfu 500,PAY_BILL,500,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 500,True
+syn_0452,Niongeze soo mbili chali yangu,BUY_AIRTIME,200,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 200,True
+syn_0429,Buy bundles za bob mbao kwa sis,BUY_BUNDLES,20,sis,,*334# -> 3 -> 2 -> 20,True
+syn_0263,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0305,Paybill M-Pesa amount 100,PAY_BILL,100,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 100,True
+syn_0500,Lipa KPLC account 0700112233 amount 1500,PAY_BILL,1500,0700112233,KPLC,*334# -> 2 -> 1 -> KPLC -> 0700112233 -> 1500,True
+syn_0548,Niambie salio langu la Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0404,Nahitaji data bundles za fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0186,Tuma Ksh 100 to mama,SEND_MONEY,100,mama,,*334# -> 1 -> mama -> 100,True
+syn_0684,Nipatie bundles ya fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0151,Weka cash fifty bob hapa sis,SEND_MONEY,50,sis,,*334# -> 1 -> sis -> 50,True
+syn_0188,How much money is in my KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0708,Check salio data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0102,Lipa punch airtime line hii,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0366,Tuma 0700112233 chapaa soo tano,SEND_MONEY,500,0700112233,,*334# -> 1 -> 0700112233 -> 500,True
+syn_0113,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0811,Nitumie elfu mbili kwa shosh,SEND_MONEY,2000,shosh,,*334# -> 1 -> shosh -> 2000,True
+syn_0782,Niongeze elfu mbili brathe,BUY_AIRTIME,2000,brathe,,*334# -> 3 -> 1 -> brathe -> 2000,True
+syn_0907,Niongeze chapaa soo tano 0700112233,BUY_AIRTIME,500,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 500,True
+syn_0658,How much money is in my M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0852,Bao credit ya elfu mbili kwa 0722000000,BUY_AIRTIME,2000,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 2000,True
+syn_0141,Niaje Send chapaa soo tano kwa 0722000000,SEND_MONEY,500,0722000000,,*334# -> 1 -> 0722000000 -> 500,True
+syn_0583,Niambie salio langu la net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0865,Lipa bill ya KPLC Ksh 2000,PAY_BILL,2000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 2000,True
+syn_0506,Tuma Ksh 2000 to 0700112233,SEND_MONEY,2000,0700112233,,*334# -> 1 -> 0700112233 -> 2000,True
+syn_0848,Check balance ya Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0764,Buy bundles za mbao kwa chali yangu,BUY_BUNDLES,20,chali yangu,,*334# -> 3 -> 2 -> 20,True
+syn_0390,Lipa bill ya Safaricom Ksh 1500,PAY_BILL,1500,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 1500,True
+syn_0581,Nitumie mama chapaa soo tano,SEND_MONEY,500,mama,,*334# -> 1 -> mama -> 500,True
+syn_0880,Lipa net account 0712345678 amount 200,PAY_BILL,200,0712345678,net,*334# -> 2 -> 1 -> net -> 0712345678 -> 200,True
+syn_0530,Lipa token account chali yangu amount 5000,PAY_BILL,5000,chali yangu,token,*334# -> 2 -> 1 -> token -> chali yangu -> 5000,True
+syn_0598,Check salio M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0344,Nitumie data ya elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0884,Nipatie bundles ya fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0302,Bao credit ya fifty bob kwa sis,BUY_AIRTIME,50,sis,,*334# -> 3 -> 1 -> sis -> 50,True
+syn_0323,How much money is in my M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0479,Nishikie bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0785,Paybill KPLC amount 2000,PAY_BILL,2000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 2000,True
+syn_0074,Nishikie data ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0902,Niongeze elfu mbili chali yangu,BUY_AIRTIME,2000,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 2000,True
+syn_0139,Nipatie bundles ya bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0389,Niongeze net za mbao,BUY_BUNDLES,20,,net,*334# -> 3 -> 2 -> 20,True
+syn_0319,Lipa data ya Ksh 500,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0250,Tuma token soo 100,PAY_BILL,100,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 100,True
+syn_0011,Can you Lipa chapaa soo tano to shosh,SEND_MONEY,500,shosh,,*334# -> 1 -> shosh -> 500,True
+syn_0445,Paybill token amount 50,PAY_BILL,50,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 50,True
+syn_0568,Balance ni gani kwa Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0499,Nipatie bundles ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0850,Tuma data soo 5000,PAY_BILL,5000,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 5000,True
+syn_0926,Neelekeze Niletee chapaa soo tano kwa 0700112233,SEND_MONEY,500,0700112233,,*334# -> 1 -> 0700112233 -> 500,True
+syn_0003,Check salio Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0483,How much money is in my data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0275,Paybill token amount 1000,PAY_BILL,1000,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 1000,True
+syn_0976,Tuma mbao direct kwa 0700112233,SEND_MONEY,20,0700112233,,*334# -> 1 -> 0700112233 -> 20,True
+syn_0968,Niambie salio langu la net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0756,Niletee cash Ksh 500 hapa mzee,SEND_MONEY,500,mzee,,*334# -> 1 -> mzee -> 500,True
+syn_0961,Can you Nishikie mbao to 0798765432,SEND_MONEY,20,0798765432,,*334# -> 1 -> 0798765432 -> 20,True
+syn_0008,Nataka kuangalia balance kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0805,Lipia KPLC elfu 1500,PAY_BILL,1500,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 1500,True
+syn_0763,Check salio M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0671,Can you Nitumie soo mbili to chali yangu,SEND_MONEY,200,chali yangu,,*334# -> 1 -> chali yangu -> 200,True
+syn_0733,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0240,Lipa Zuku soo 1500,PAY_BILL,1500,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 1500,True
+syn_0352,Niongeze punch 0700112233,BUY_AIRTIME,100,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 100,True
+syn_0001,Weka elfu mbili kwa brathe,SEND_MONEY,2000,brathe,,*334# -> 1 -> brathe -> 2000,True
+syn_0919,Buy bundles za mbao kwa sis,BUY_BUNDLES,20,sis,,*334# -> 3 -> 2 -> 20,True
+syn_0485,Nitumie net soo 100,PAY_BILL,100,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 100,True
+syn_0320,Lipa token account chali yangu amount 2000,PAY_BILL,2000,chali yangu,token,*334# -> 2 -> 1 -> token -> chali yangu -> 2000,True
+syn_0573,Check balance ya token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0846,Tuma Ksh 1500 to shosh,SEND_MONEY,1500,shosh,,*334# -> 1 -> shosh -> 1500,True
+syn_0444,Nipatie bundles ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0761,Tuma Ksh 5000 to 0722000000,SEND_MONEY,5000,0722000000,,*334# -> 1 -> 0722000000 -> 5000,True
+syn_0784,Send data ya fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0089,Nahitaji data bundles za fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0524,Nipatie bundles ya bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0427,Send soo tano airtime line hii,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0014,Buy bundles za elfu mbili kwa 0712345678,BUY_BUNDLES,2000,0712345678,,*334# -> 3 -> 2 -> 2000,True
+syn_0105,Weka net soo 200,PAY_BILL,200,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 200,True
+syn_0563,Check balance ya KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0566,Can you Niletee punch to shosh,SEND_MONEY,100,shosh,,*334# -> 1 -> shosh -> 100,True
+syn_0955,Nishikie KPLC soo 50,PAY_BILL,50,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 50,True
+syn_0315,Paybill token amount 100,PAY_BILL,100,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 100,True
+syn_0680,Paybill KPLC amount 100,PAY_BILL,100,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 100,True
+syn_0354,Nishikie bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0753,Check salio Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0676,Niaje Nishikie punch kwa 0798765432,SEND_MONEY,100,0798765432,,*334# -> 1 -> 0798765432 -> 100,True
+syn_0977,Tuma soo mbili airtime line hii,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0588,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0600,Lipa bill ya KPLC Ksh 100,PAY_BILL,100,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 100,True
+syn_0299,Nahitaji data bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0431,Niaje Niletee elfu moja kwa brathe,SEND_MONEY,1000,brathe,,*334# -> 1 -> brathe -> 1000,True
+syn_0736,Niaje Send elfu moja kwa brathe,SEND_MONEY,1000,brathe,,*334# -> 1 -> brathe -> 1000,True
+syn_0104,Nipatie bundles ya punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0032,Niongeze mbao 0722000000,BUY_AIRTIME,20,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 20,True
+syn_0643,Balance ni gani kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0309,Nipatie bundles ya punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0379,Buy bundles za elfu moja kwa 0722000000,BUY_BUNDLES,1000,0722000000,,*334# -> 3 -> 2 -> 1000,True
+syn_0048,Check salio net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0152,Bao credit ya elfu moja kwa 0722000000,BUY_AIRTIME,1000,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 1000,True
+syn_0222,Tuma kredit elfu moja,BUY_AIRTIME,1000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 1000,True
+syn_0118,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0363,How much money is in my M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0545,Lipa bill ya M-Pesa Ksh 5000,PAY_BILL,5000,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 5000,True
+syn_0943,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0306,Niletee chapaa soo tano kwa mama,SEND_MONEY,500,mama,,*334# -> 1 -> mama -> 500,True
+syn_0818,How much money is in my Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0594,Nipatie bundles ya elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0519,Nishikie data ya elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0017,Tuma kredit elfu mbili,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0501,Can you Niletee soo tano to shosh,SEND_MONEY,500,shosh,,*334# -> 1 -> shosh -> 500,True
+syn_0619,Send data ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0939,Buy bundles za mbao kwa 0722000000,BUY_BUNDLES,20,0722000000,,*334# -> 3 -> 2 -> 20,True
+syn_0975,Lipia KPLC elfu 50,PAY_BILL,50,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 50,True
+syn_0279,Nahitaji data bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0129,Nipatie bundles ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0561,Neelekeze Weka Ksh 500 kwa shosh,SEND_MONEY,500,shosh,,*334# -> 1 -> shosh -> 500,True
+syn_0647,Can I get mbao airtime,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0690,Lipia KPLC elfu 500,PAY_BILL,500,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 500,True
+syn_0537,Send kredit fifty bob,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0062,Tuma airtime ya Ksh 500,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0255,Lipa bill ya M-Pesa Ksh 5000,PAY_BILL,5000,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 5000,True
+syn_0096,Lipa chali yangu elfu moja,SEND_MONEY,1000,chali yangu,,*334# -> 1 -> chali yangu -> 1000,True
+syn_0349,Nipatie bundles ya soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0702,Nishikie kredit ya bob mbao kwa number 0722000000,BUY_AIRTIME,20,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 20,True
+syn_0176,Neelekeze Weka bob mbao kwa chali yangu,SEND_MONEY,20,chali yangu,,*334# -> 1 -> chali yangu -> 20,True
+syn_0779,Nitumie data ya punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0867,Bao credit ya soo tano kwa chali yangu,BUY_AIRTIME,500,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 500,True
+syn_0901,Send cash Ksh 500 hapa chali yangu,SEND_MONEY,500,chali yangu,,*334# -> 1 -> chali yangu -> 500,True
+syn_0601,Nitumie 0712345678 soo tano,SEND_MONEY,500,0712345678,,*334# -> 1 -> 0712345678 -> 500,True
+syn_0695,Weka Zuku soo 200,PAY_BILL,200,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 200,True
+syn_0382,Lipa airtime ya punch,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0466,Tuma elfu moja direct kwa mama,SEND_MONEY,1000,mama,,*334# -> 1 -> mama -> 1000,True
+syn_0774,Nishikie bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0353,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0393,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0385,Lipa bill ya Safaricom Ksh 50,PAY_BILL,50,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 50,True
+syn_0249,Niongeze token za soo tano,BUY_BUNDLES,500,,token,*334# -> 3 -> 2 -> 500,True
+syn_0248,Balance ni gani kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0085,Lipa bill ya token Ksh 200,PAY_BILL,200,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 200,True
+syn_0556,Tuma mbao kwa brathe,SEND_MONEY,20,brathe,,*334# -> 1 -> brathe -> 20,True
+syn_0155,Lipa net account sis amount 1500,PAY_BILL,1500,sis,net,*334# -> 2 -> 1 -> net -> sis -> 1500,True
+syn_0855,Lipa bill ya KPLC Ksh 2000,PAY_BILL,2000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 2000,True
+syn_0864,Nipatie bundles ya punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0205,Lipa data account mama amount 1500,PAY_BILL,1500,mama,data,*334# -> 2 -> 1 -> data -> mama -> 1500,True
+syn_0304,Buy bundles za soo mbili kwa mzee,BUY_BUNDLES,200,mzee,,*334# -> 3 -> 2 -> 200,True
+syn_0629,Niongeze net za soo mbili,BUY_BUNDLES,200,,net,*334# -> 3 -> 2 -> 200,True
+syn_0345,Lipa bill ya net Ksh 1500,PAY_BILL,1500,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 1500,True
+syn_0885,Paybill M-Pesa amount 5000,PAY_BILL,5000,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 5000,True
+syn_0055,Lipia KPLC elfu 500,PAY_BILL,500,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 500,True
+syn_0508,Niambie salio langu la KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0592,Can I get mbao airtime,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0825,Paybill net amount 500,PAY_BILL,500,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 500,True
+syn_0918,How much money is in my M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0009,Nahitaji data bundles za Ksh 500,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0931,Nitumie bob mbao kwa chali yangu,SEND_MONEY,20,chali yangu,,*334# -> 1 -> chali yangu -> 20,True
+syn_0060,Lipia Safaricom elfu 1500,PAY_BILL,1500,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 1500,True
+syn_0037,Tuma airtime ya elfu moja,BUY_AIRTIME,1000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 1000,True
+syn_0088,Check salio Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0521,Send cash mbao hapa mama,SEND_MONEY,20,mama,,*334# -> 1 -> mama -> 20,True
+syn_0807,Niongeze elfu mbili mama,BUY_AIRTIME,2000,mama,,*334# -> 3 -> 1 -> mama -> 2000,True
+syn_0131,Nitumie cash chapaa soo tano hapa 0712345678,SEND_MONEY,500,0712345678,,*334# -> 1 -> 0712345678 -> 500,True
+syn_0254,Nahitaji data bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0365,Lipa bill ya Safaricom Ksh 1500,PAY_BILL,1500,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 1500,True
+syn_0754,Send data ya elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0713,How much money is in my token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0516,Tuma fifty bob kwa 0722000000,SEND_MONEY,50,0722000000,,*334# -> 1 -> 0722000000 -> 50,True
+syn_0038,Check salio M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0954,Nipatie bundles ya punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0191,Neelekeze Weka bob mbao kwa mama,SEND_MONEY,20,mama,,*334# -> 1 -> mama -> 20,True
+syn_0491,Niletee cash elfu mbili hapa mama,SEND_MONEY,2000,mama,,*334# -> 1 -> mama -> 2000,True
+syn_0493,How much money is in my net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0577,Niongeze chapaa soo tano 0700112233,BUY_AIRTIME,500,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 500,True
+syn_0290,Lipia KPLC elfu 100,PAY_BILL,100,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 100,True
+syn_0258,Balance ni gani kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0331,Tuma Ksh 1500 to shosh,SEND_MONEY,1500,shosh,,*334# -> 1 -> shosh -> 1500,True
+syn_0401,Tuma soo tano direct kwa shosh,SEND_MONEY,500,shosh,,*334# -> 1 -> shosh -> 500,True
+syn_0460,Lipa Safaricom account 0712345678 amount 2000,PAY_BILL,2000,0712345678,Safaricom,*334# -> 2 -> 1 -> Safaricom -> 0712345678 -> 2000,True
+syn_0120,Lipia token elfu 100,PAY_BILL,100,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 100,True
+syn_0398,Check salio token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0613,Check balance ya M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0565,Lipa KPLC account shosh amount 1000,PAY_BILL,1000,shosh,KPLC,*334# -> 2 -> 1 -> KPLC -> shosh -> 1000,True
+syn_0876,Neelekeze Lipa fifty bob kwa mzee,SEND_MONEY,50,mzee,,*334# -> 1 -> mzee -> 50,True
+syn_0458,Nataka kuangalia balance kwa KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0476,Nishikie bob mbao kwa 0712345678,SEND_MONEY,20,0712345678,,*334# -> 1 -> 0712345678 -> 20,True
+syn_0149,Nahitaji data bundles za soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0655,Send KPLC soo 1000,PAY_BILL,1000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 1000,True
+syn_0881,Tuma elfu moja direct kwa sis,SEND_MONEY,1000,sis,,*334# -> 1 -> sis -> 1000,True
+syn_0951,Lipa cash elfu moja hapa 0722000000,SEND_MONEY,1000,0722000000,,*334# -> 1 -> 0722000000 -> 1000,True
+syn_0496,Weka 0700112233 punch,SEND_MONEY,100,0700112233,,*334# -> 1 -> 0700112233 -> 100,True
+syn_0824,Niongeze M-Pesa za elfu moja,BUY_BUNDLES,1000,,M-Pesa,*334# -> 3 -> 2 -> 1000,True
+syn_0267,Send airtime ya elfu moja,BUY_AIRTIME,1000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 1000,True
+syn_0179,Niongeze token za elfu mbili,BUY_BUNDLES,2000,,token,*334# -> 3 -> 2 -> 2000,True
+syn_0400,Lipa net soo 1500,PAY_BILL,1500,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 1500,True
+syn_0995,Lipa Safaricom account mama amount 200,PAY_BILL,200,mama,Safaricom,*334# -> 2 -> 1 -> Safaricom -> mama -> 200,True
+syn_0153,Balance ni gani kwa net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0214,Niongeze Safaricom za elfu moja,BUY_BUNDLES,1000,,Safaricom,*334# -> 3 -> 2 -> 1000,True
+syn_0921,Niletee cash soo mbili hapa 0712345678,SEND_MONEY,200,0712345678,,*334# -> 1 -> 0712345678 -> 200,True
+syn_0482,Tuma kredit soo tano,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0156,Niletee soo mbili kwa sis,SEND_MONEY,200,sis,,*334# -> 1 -> sis -> 200,True
+syn_0973,Nataka kuangalia balance kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0321,Niaje Nishikie fifty bob kwa sis,SEND_MONEY,50,sis,,*334# -> 1 -> sis -> 50,True
+syn_0929,Nishikie bundles za bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0803,How much money is in my net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0488,How much money is in my KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0866,Niaje Send soo mbili kwa 0712345678,SEND_MONEY,200,0712345678,,*334# -> 1 -> 0712345678 -> 200,True
+syn_0272,Tuma mbao airtime line hii,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0328,Check balance ya KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0776,Tuma soo mbili direct kwa mzee,SEND_MONEY,200,mzee,,*334# -> 1 -> mzee -> 200,True
+syn_0409,Nishikie bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0261,Tuma soo mbili direct kwa 0722000000,SEND_MONEY,200,0722000000,,*334# -> 1 -> 0722000000 -> 200,True
+syn_0533,Check salio Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0094,Buy bundles za soo tano kwa chali yangu,BUY_BUNDLES,500,chali yangu,,*334# -> 3 -> 2 -> 500,True
+syn_0616,Tuma soo mbili direct kwa 0712345678,SEND_MONEY,200,0712345678,,*334# -> 1 -> 0712345678 -> 200,True
+syn_0100,Lipa bill ya data Ksh 500,PAY_BILL,500,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 500,True
+syn_0045,Lipa KPLC account 0700112233 amount 1500,PAY_BILL,1500,0700112233,KPLC,*334# -> 2 -> 1 -> KPLC -> 0700112233 -> 1500,True
+syn_0689,Buy bundles za Ksh 500 kwa mzee,BUY_BUNDLES,500,mzee,,*334# -> 3 -> 2 -> 500,True
+syn_0351,Niaje Weka soo mbili kwa 0798765432,SEND_MONEY,200,0798765432,,*334# -> 1 -> 0798765432 -> 200,True
+syn_0706,Niaje Weka mbao kwa sis,SEND_MONEY,20,sis,,*334# -> 1 -> sis -> 20,True
+syn_0518,Nataka kuangalia balance kwa M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0101,Niletee brathe fifty bob,SEND_MONEY,50,brathe,,*334# -> 1 -> brathe -> 50,True
+syn_0108,Niambie salio langu la Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0575,Lipa token account mzee amount 50,PAY_BILL,50,mzee,token,*334# -> 2 -> 1 -> token -> mzee -> 50,True
+syn_0467,Weka kredit elfu mbili,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0023,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0553,Nataka kuangalia balance kwa KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0457,Lipa airtime ya mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0359,Nahitaji data bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0529,Nishikie bundles za chapaa soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0308,Check balance ya Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0928,Nataka kuangalia balance kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0804,Nipatie bundles ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0497,Can I get soo mbili airtime,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0875,Lipa Safaricom account mama amount 2000,PAY_BILL,2000,mama,Safaricom,*334# -> 2 -> 1 -> Safaricom -> mama -> 2000,True
+syn_0632,Niletee airtime ya mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0292,Send kredit ya soo mbili kwa number sis,BUY_AIRTIME,200,sis,,*334# -> 3 -> 1 -> sis -> 200,True
+syn_0318,Check balance ya token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0555,Lipa M-Pesa account brathe amount 5000,PAY_BILL,5000,brathe,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> brathe -> 5000,True
+syn_0160,Lipia net elfu 5000,PAY_BILL,5000,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 5000,True
+syn_0095,Lipa bill ya Safaricom Ksh 1000,PAY_BILL,1000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 1000,True
+syn_0744,Nahitaji data bundles za punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0455,Lipa Safaricom account 0722000000 amount 2000,PAY_BILL,2000,0722000000,Safaricom,*334# -> 2 -> 1 -> Safaricom -> 0722000000 -> 2000,True
+syn_0847,Send kredit ya elfu mbili kwa number shosh,BUY_AIRTIME,2000,shosh,,*334# -> 3 -> 1 -> shosh -> 2000,True
+syn_0813,Check balance ya token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0364,Nipatie bundles ya chapaa soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0372,Weka kredit bob mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0775,Tuma Safaricom soo 5000,PAY_BILL,5000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 5000,True
+syn_0232,Nitumie kredit elfu mbili,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0262,Niongeze punch mama,BUY_AIRTIME,100,mama,,*334# -> 3 -> 1 -> mama -> 100,True
+syn_0957,Can I get fifty bob airtime,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0772,Tuma elfu mbili airtime line hii,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0217,Niongeze fifty bob sis,BUY_AIRTIME,50,sis,,*334# -> 3 -> 1 -> sis -> 50,True
+syn_0572,Weka airtime ya soo tano,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0112,Send kredit fifty bob,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0558,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0889,Nipatie bundles ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0809,Nipatie bundles ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0124,Nahitaji data bundles za bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0432,Lipa fifty bob airtime line hii,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0878,Niambie salio langu la data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0325,Paybill M-Pesa amount 1500,PAY_BILL,1500,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 1500,True
+syn_0291,Tuma elfu moja direct kwa mzee,SEND_MONEY,1000,mzee,,*334# -> 1 -> mzee -> 1000,True
+syn_0289,Nishikie bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0284,Nipatie bundles ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0447,Lipa kredit ya chapaa soo tano kwa number mama,BUY_AIRTIME,500,mama,,*334# -> 3 -> 1 -> mama -> 500,True
+syn_0845,Lipa bill ya KPLC Ksh 1000,PAY_BILL,1000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 1000,True
+syn_0140,Lipa M-Pesa soo 1500,PAY_BILL,1500,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 1500,True
+syn_0746,Tuma soo tano direct kwa 0712345678,SEND_MONEY,500,0712345678,,*334# -> 1 -> 0712345678 -> 500,True
+syn_0138,Balance ni gani kwa Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0793,How much money is in my Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0642,Bao credit ya soo mbili kwa sis,BUY_AIRTIME,200,sis,,*334# -> 3 -> 1 -> sis -> 200,True
+syn_0370,Lipa M-Pesa account 0722000000 amount 100,PAY_BILL,100,0722000000,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> 0722000000 -> 100,True
+syn_0238,Balance ni gani kwa Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0838,Balance ni gani kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0190,Lipa token soo 100,PAY_BILL,100,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 100,True
+syn_0986,Weka 0700112233 elfu moja,SEND_MONEY,1000,0700112233,,*334# -> 1 -> 0700112233 -> 1000,True
+syn_0787,Bao credit ya bob mbao kwa sis,BUY_AIRTIME,20,sis,,*334# -> 3 -> 1 -> sis -> 20,True
+syn_0536,Neelekeze Niletee elfu moja kwa shosh,SEND_MONEY,1000,shosh,,*334# -> 1 -> shosh -> 1000,True
+syn_0417,Nishikie mbao airtime line hii,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0602,Can I get bob mbao airtime,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0798,Balance ni gani kwa KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0469,Buy bundles za Ksh 500 kwa 0700112233,BUY_BUNDLES,500,0700112233,,*334# -> 3 -> 2 -> 500,True
+syn_0765,Paybill KPLC amount 2000,PAY_BILL,2000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 2000,True
+syn_0069,Niongeze token za punch,BUY_BUNDLES,100,,token,*334# -> 3 -> 2 -> 100,True
+syn_0628,How much money is in my Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0332,Can I get soo mbili airtime,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0465,Lipa bill ya token Ksh 200,PAY_BILL,200,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 200,True
+syn_0651,Lipa cash fifty bob hapa chali yangu,SEND_MONEY,50,chali yangu,,*334# -> 1 -> chali yangu -> 50,True
+syn_0012,Nitumie kredit Ksh 500,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0817,Weka kredit ya chapaa soo tano kwa number mzee,BUY_AIRTIME,500,mzee,,*334# -> 3 -> 1 -> mzee -> 500,True
+syn_0829,Niongeze M-Pesa za soo mbili,BUY_BUNDLES,200,,M-Pesa,*334# -> 3 -> 2 -> 200,True
+syn_0503,Nataka kuangalia balance kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0664,Buy bundles za punch kwa shosh,BUY_BUNDLES,100,shosh,,*334# -> 3 -> 2 -> 100,True
+syn_0047,Lipa chapaa soo tano airtime line hii,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0340,Lipa bill ya data Ksh 1000,PAY_BILL,1000,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 1000,True
+syn_0693,Balance ni gani kwa KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0814,Nishikie bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0538,Nataka kuangalia balance kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0016,Lipa cash bob mbao hapa mzee,SEND_MONEY,20,mzee,,*334# -> 1 -> mzee -> 20,True
+syn_0030,Weka net soo 500,PAY_BILL,500,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 500,True
+syn_0520,Lipia Zuku elfu 200,PAY_BILL,200,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 200,True
+syn_0397,Can I get chapaa soo tano airtime,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0296,Can you Nishikie fifty bob to brathe,SEND_MONEY,50,brathe,,*334# -> 1 -> brathe -> 50,True
+syn_0244,Buy bundles za elfu moja kwa shosh,BUY_BUNDLES,1000,shosh,,*334# -> 3 -> 2 -> 1000,True
+syn_0287,Niongeze bob mbao 0722000000,BUY_AIRTIME,20,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 20,True
+syn_0946,Nitumie cash elfu moja hapa 0722000000,SEND_MONEY,1000,0722000000,,*334# -> 1 -> 0722000000 -> 1000,True
+syn_0110,Tuma Zuku soo 1000,PAY_BILL,1000,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 1000,True
+syn_0694,Nahitaji data bundles za punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0259,Nipatie bundles ya elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0209,Nishikie bundles za fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0383,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0298,Nataka kuangalia balance kwa KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0513,Check salio KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0578,How much money is in my Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0574,Nipatie bundles ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0051,Lipa cash mbao hapa 0798765432,SEND_MONEY,20,0798765432,,*334# -> 1 -> 0798765432 -> 20,True
+syn_0184,Nahitaji data bundles za elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0709,Nipatie bundles ya soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0640,Tuma Zuku soo 50,PAY_BILL,50,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 50,True
+syn_0018,How much money is in my Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0399,Nishikie bundles za bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0502,Niletee kredit fifty bob,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0963,Check balance ya Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0422,Niongeze mbao 0700112233,BUY_AIRTIME,20,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 20,True
+syn_0392,Bao credit ya fifty bob kwa 0722000000,BUY_AIRTIME,50,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 50,True
+syn_0116,Neelekeze Nishikie fifty bob kwa mzee,SEND_MONEY,50,mzee,,*334# -> 1 -> mzee -> 50,True
+syn_0490,Paybill Safaricom amount 2000,PAY_BILL,2000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 2000,True
+syn_0665,Lipia data elfu 2000,PAY_BILL,2000,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 2000,True
+syn_0877,Bao credit ya soo tano kwa 0798765432,BUY_AIRTIME,500,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 500,True
+syn_0019,Tuma data ya fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0770,Lipa bill ya token Ksh 1000,PAY_BILL,1000,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 1000,True
+syn_0982,Can I get bob mbao airtime,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0905,Lipa net account brathe amount 100,PAY_BILL,100,brathe,net,*334# -> 2 -> 1 -> net -> brathe -> 100,True
+syn_0441,Nitumie mbao kwa mzee,SEND_MONEY,20,mzee,,*334# -> 1 -> mzee -> 20,True
+syn_0794,Nipatie bundles ya fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0966,Niletee bob mbao kwa 0700112233,SEND_MONEY,20,0700112233,,*334# -> 1 -> 0700112233 -> 20,True
+syn_0816,Nitumie cash punch hapa brathe,SEND_MONEY,100,brathe,,*334# -> 1 -> brathe -> 100,True
+syn_0486,Niletee soo tano kwa 0798765432,SEND_MONEY,500,0798765432,,*334# -> 1 -> 0798765432 -> 500,True
+syn_0437,Can I get bob mbao airtime,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0993,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0041,Tuma Ksh 500 direct kwa brathe,SEND_MONEY,500,brathe,,*334# -> 1 -> brathe -> 500,True
+syn_0802,Tuma kredit elfu moja,BUY_AIRTIME,1000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 1000,True
+syn_0122,Nishikie mbao airtime line hii,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0892,Niongeze elfu moja 0700112233,BUY_AIRTIME,1000,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 1000,True
+syn_0987,Nishikie kredit ya fifty bob kwa number 0798765432,BUY_AIRTIME,50,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 50,True
+syn_0669,Buy bundles za bob mbao kwa brathe,BUY_BUNDLES,20,brathe,,*334# -> 3 -> 2 -> 20,True
+syn_0656,Neelekeze Nitumie fifty bob kwa 0712345678,SEND_MONEY,50,0712345678,,*334# -> 1 -> 0712345678 -> 50,True
+syn_0376,Tuma Ksh 1500 to mama,SEND_MONEY,1500,mama,,*334# -> 1 -> mama -> 1500,True
+syn_0969,Niletee data ya fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0494,Buy bundles za punch kwa 0712345678,BUY_BUNDLES,100,0712345678,,*334# -> 3 -> 2 -> 100,True
+syn_0424,Nahitaji data bundles za mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0043,Balance ni gani kwa M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0423,Balance ni gani kwa KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0425,Nitumie Safaricom soo 50,PAY_BILL,50,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 50,True
+syn_0778,Check balance ya net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0648,Check balance ya Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0857,Nishikie chapaa soo tano airtime line hii,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0239,Buy bundles za punch kwa mzee,BUY_BUNDLES,100,mzee,,*334# -> 3 -> 2 -> 100,True
+syn_0121,Weka chali yangu soo mbili,SEND_MONEY,200,chali yangu,,*334# -> 1 -> chali yangu -> 200,True
+syn_0212,Niongeze chapaa soo tano chali yangu,BUY_AIRTIME,500,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 500,True
+syn_0046,Neelekeze Tuma punch kwa mzee,SEND_MONEY,100,mzee,,*334# -> 1 -> mzee -> 100,True
+syn_0157,Bao credit ya punch kwa sis,BUY_AIRTIME,100,sis,,*334# -> 3 -> 1 -> sis -> 100,True
+syn_0927,Can I get elfu moja airtime,BUY_AIRTIME,1000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 1000,True
+syn_0036,Neelekeze Nitumie Ksh 500 kwa shosh,SEND_MONEY,500,shosh,,*334# -> 1 -> shosh -> 500,True
+syn_0175,Lipa bill ya M-Pesa Ksh 2000,PAY_BILL,2000,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 2000,True
+syn_0971,Niletee cash fifty bob hapa 0700112233,SEND_MONEY,50,0700112233,,*334# -> 1 -> 0700112233 -> 50,True
+syn_0715,Lipa data account 0712345678 amount 50,PAY_BILL,50,0712345678,data,*334# -> 2 -> 1 -> data -> 0712345678 -> 50,True
+syn_0171,Niaje Lipa mbao kwa chali yangu,SEND_MONEY,20,chali yangu,,*334# -> 1 -> chali yangu -> 20,True
+syn_0303,Check balance ya Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0605,Lipia Safaricom elfu 50,PAY_BILL,50,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 50,True
+syn_0285,Paybill net amount 2000,PAY_BILL,2000,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 2000,True
+syn_0247,Can I get fifty bob airtime,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0421,Tuma Ksh 1500 to chali yangu,SEND_MONEY,1500,chali yangu,,*334# -> 1 -> chali yangu -> 1500,True
+syn_0831,Nitumie fifty bob kwa brathe,SEND_MONEY,50,brathe,,*334# -> 1 -> brathe -> 50,True
+syn_0463,How much money is in my net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0727,Nitumie kredit ya fifty bob kwa number 0722000000,BUY_AIRTIME,50,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 50,True
+syn_0967,Tuma kredit mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0856,Tuma elfu moja kwa mzee,SEND_MONEY,1000,mzee,,*334# -> 1 -> mzee -> 1000,True
+syn_0863,Niambie salio langu la Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0815,Lipa M-Pesa account sis amount 1000,PAY_BILL,1000,sis,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> sis -> 1000,True
+syn_0408,Nataka kuangalia balance kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0688,Check salio M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0909,Nishikie bundles za soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0076,Can you Niletee elfu mbili to 0700112233,SEND_MONEY,2000,0700112233,,*334# -> 1 -> 0700112233 -> 2000,True
+syn_0192,Niongeze elfu moja mama,BUY_AIRTIME,1000,mama,,*334# -> 3 -> 1 -> mama -> 1000,True
+syn_0183,How much money is in my Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0714,Nitumie data ya bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0920,Lipa bill ya Zuku Ksh 200,PAY_BILL,200,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 200,True
+syn_0808,Nataka kuangalia balance kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0759,Nipatie bundles ya bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0178,Nataka kuangalia balance kwa M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0420,Paybill token amount 1500,PAY_BILL,1500,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 1500,True
+syn_0935,Paybill M-Pesa amount 50,PAY_BILL,50,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 50,True
+syn_0899,Buy bundles za elfu moja kwa chali yangu,BUY_BUNDLES,1000,chali yangu,,*334# -> 3 -> 2 -> 1000,True
+syn_0207,Bao credit ya elfu moja kwa 0712345678,BUY_AIRTIME,1000,0712345678,,*334# -> 3 -> 1 -> 0712345678 -> 1000,True
+syn_0789,Nishikie bundles za elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0938,How much money is in my Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0099,Nishikie data ya elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0551,Weka elfu mbili kwa brathe,SEND_MONEY,2000,brathe,,*334# -> 1 -> brathe -> 2000,True
+syn_0123,Niambie salio langu la token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0723,Check balance ya net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0079,Buy bundles za punch kwa shosh,BUY_BUNDLES,100,shosh,,*334# -> 3 -> 2 -> 100,True
+syn_0293,Check balance ya net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0979,Nahitaji data bundles za bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0260,Lipa net account brathe amount 200,PAY_BILL,200,brathe,net,*334# -> 2 -> 1 -> net -> brathe -> 200,True
+syn_0868,Niambie salio langu la M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0654,Niongeze M-Pesa za soo tano,BUY_BUNDLES,500,,M-Pesa,*334# -> 3 -> 2 -> 500,True
+syn_0220,Lipia Safaricom elfu 100,PAY_BILL,100,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 100,True
+syn_0228,Niambie salio langu la Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0005,Paybill KPLC amount 1000,PAY_BILL,1000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 1000,True
+syn_0346,Niaje Lipa elfu mbili kwa mama,SEND_MONEY,2000,mama,,*334# -> 1 -> mama -> 2000,True
+syn_0636,Can you Nitumie Ksh 500 to mama,SEND_MONEY,500,mama,,*334# -> 1 -> mama -> 500,True
+syn_0211,Can you Nishikie Ksh 500 to 0798765432,SEND_MONEY,500,0798765432,,*334# -> 1 -> 0798765432 -> 500,True
+syn_0719,Nishikie bundles za punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0061,Tuma Ksh 50 to mama,SEND_MONEY,50,mama,,*334# -> 1 -> mama -> 50,True
+syn_0525,Tuma M-Pesa soo 2000,PAY_BILL,2000,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 2000,True
+syn_0223,Check salio token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0377,Tuma kredit fifty bob,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0269,Nahitaji data bundles za fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0375,Lipa token soo 1500,PAY_BILL,1500,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 1500,True
+syn_0442,Nitumie kredit bob mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0360,Weka data soo 100,PAY_BILL,100,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 100,True
+syn_0405,Tuma data soo 200,PAY_BILL,200,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 200,True
+syn_0657,Tuma airtime ya Ksh 500,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0478,How much money is in my Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0386,Neelekeze Weka soo tano kwa 0700112233,SEND_MONEY,500,0700112233,,*334# -> 1 -> 0700112233 -> 500,True
+syn_0826,Niletee 0700112233 mbao,SEND_MONEY,20,0700112233,,*334# -> 1 -> 0700112233 -> 20,True
+syn_0988,Niambie salio langu la Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0911,Tuma cash elfu mbili hapa sis,SEND_MONEY,2000,sis,,*334# -> 1 -> sis -> 2000,True
+syn_0154,Nishikie bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0286,Neelekeze Tuma punch kwa 0798765432,SEND_MONEY,100,0798765432,,*334# -> 1 -> 0798765432 -> 100,True
+syn_0218,Check balance ya Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0114,Buy bundles za bob mbao kwa 0722000000,BUY_BUNDLES,20,0722000000,,*334# -> 3 -> 2 -> 20,True
+syn_0822,Niongeze soo mbili sis,BUY_AIRTIME,200,sis,,*334# -> 3 -> 1 -> sis -> 200,True
+syn_0495,Lipa M-Pesa account 0700112233 amount 50,PAY_BILL,50,0700112233,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> 0700112233 -> 50,True
+syn_0883,How much money is in my KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0182,Niletee kredit fifty bob,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0836,Can you Send elfu moja to 0700112233,SEND_MONEY,1000,0700112233,,*334# -> 1 -> 0700112233 -> 1000,True
+syn_0474,Nishikie bundles za mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0707,Can I get elfu mbili airtime,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0168,Check balance ya KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0419,Nahitaji data bundles za elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0133,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0924,Nishikie data ya chapaa soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0213,Check salio M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0842,Nishikie elfu mbili airtime line hii,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0625,Lipa bill ya Safaricom Ksh 100,PAY_BILL,100,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 100,True
+syn_0453,Check salio KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0231,Niletee 0700112233 mbao,SEND_MONEY,20,0700112233,,*334# -> 1 -> 0700112233 -> 20,True
+syn_0933,How much money is in my token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_1000,Lipa KPLC account mama amount 1500,PAY_BILL,1500,mama,KPLC,*334# -> 2 -> 1 -> KPLC -> mama -> 1500,True
+syn_0237,Send airtime ya soo mbili,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0053,How much money is in my KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0937,Nishikie kredit soo mbili,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0170,Lipia net elfu 1000,PAY_BILL,1000,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 1000,True
+syn_0058,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0471,Nitumie 0798765432 soo mbili,SEND_MONEY,200,0798765432,,*334# -> 1 -> 0798765432 -> 200,True
+syn_0679,Buy bundles za elfu mbili kwa 0798765432,BUY_BUNDLES,2000,0798765432,,*334# -> 3 -> 2 -> 2000,True
+syn_0660,Lipia net elfu 200,PAY_BILL,200,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 200,True
+syn_0384,Buy bundles za fifty bob kwa 0700112233,BUY_BUNDLES,50,0700112233,,*334# -> 3 -> 2 -> 50,True
+syn_0771,Tuma bob mbao direct kwa mzee,SEND_MONEY,20,mzee,,*334# -> 1 -> mzee -> 20,True
+syn_0281,Tuma Ksh 500 to mzee,SEND_MONEY,500,mzee,,*334# -> 1 -> mzee -> 500,True
+syn_0799,Nipatie bundles ya Ksh 500,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0673,Balance ni gani kwa M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0543,Nataka kuangalia balance kwa Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0677,Weka kredit fifty bob,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0203,Check balance ya KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0132,Nishikie kredit ya soo mbili kwa number chali yangu,BUY_AIRTIME,200,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 200,True
+syn_0150,Paybill Safaricom amount 1000,PAY_BILL,1000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 1000,True
+syn_0932,Can I get mbao airtime,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0965,Paybill token amount 100,PAY_BILL,100,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 100,True
+syn_0806,Weka cash fifty bob hapa mzee,SEND_MONEY,50,mzee,,*334# -> 1 -> mzee -> 50,True
+syn_0701,Can you Lipa bob mbao to shosh,SEND_MONEY,20,shosh,,*334# -> 1 -> shosh -> 20,True
+syn_0705,Lipa Zuku account brathe amount 5000,PAY_BILL,5000,brathe,Zuku,*334# -> 2 -> 1 -> Zuku -> brathe -> 5000,True
+syn_0584,Nishikie bundles za fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0194,Niongeze net za mbao,BUY_BUNDLES,20,,net,*334# -> 3 -> 2 -> 20,True
+syn_0611,Tuma Ksh 100 to 0798765432,SEND_MONEY,100,0798765432,,*334# -> 1 -> 0798765432 -> 100,True
+syn_0547,Tuma airtime ya punch,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0481,Neelekeze Nitumie elfu moja kwa shosh,SEND_MONEY,1000,shosh,,*334# -> 1 -> shosh -> 1000,True
+syn_0861,Niletee mbao kwa chali yangu,SEND_MONEY,20,chali yangu,,*334# -> 1 -> chali yangu -> 20,True
+syn_0996,Neelekeze Nishikie Ksh 500 kwa mzee,SEND_MONEY,500,mzee,,*334# -> 1 -> mzee -> 500,True
+syn_0576,Niaje Send fifty bob kwa shosh,SEND_MONEY,50,shosh,,*334# -> 1 -> shosh -> 50,True
+syn_0841,Niaje Lipa chapaa soo tano kwa chali yangu,SEND_MONEY,500,chali yangu,,*334# -> 1 -> chali yangu -> 500,True
+syn_0652,Niongeze soo tano 0798765432,BUY_AIRTIME,500,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 500,True
+syn_0667,Can I get mbao airtime,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0233,Nataka kuangalia balance kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0795,Weka M-Pesa soo 100,PAY_BILL,100,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 100,True
+syn_0268,Check salio net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0527,Niongeze chapaa soo tano shosh,BUY_AIRTIME,500,shosh,,*334# -> 3 -> 1 -> shosh -> 500,True
+syn_0903,Check salio Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0609,Nitumie data ya elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0274,Nahitaji data bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0391,Weka soo tano kwa shosh,SEND_MONEY,500,shosh,,*334# -> 1 -> shosh -> 500,True
+syn_0750,Lipa KPLC account sis amount 200,PAY_BILL,200,sis,KPLC,*334# -> 2 -> 1 -> KPLC -> sis -> 200,True
+syn_0091,Neelekeze Send elfu moja kwa shosh,SEND_MONEY,1000,shosh,,*334# -> 1 -> shosh -> 1000,True
+syn_0200,Lipa net soo 100,PAY_BILL,100,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 100,True
+syn_0414,Nitumie data ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0270,Niletee M-Pesa soo 500,PAY_BILL,500,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 500,True
+syn_0567,Can I get Ksh 500 airtime,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0704,Lipa data ya elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0031,Nishikie 0722000000 elfu mbili,SEND_MONEY,2000,0722000000,,*334# -> 1 -> 0722000000 -> 2000,True
+syn_0749,Nishikie bundles za fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0631,Lipa elfu mbili kwa mzee,SEND_MONEY,2000,mzee,,*334# -> 1 -> mzee -> 2000,True
+syn_0187,Lipa airtime ya mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0276,Neelekeze Lipa elfu moja kwa mama,SEND_MONEY,1000,mama,,*334# -> 1 -> mama -> 1000,True
+syn_0165,Paybill M-Pesa amount 50,PAY_BILL,50,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 50,True
+syn_0361,Lipa cash bob mbao hapa 0722000000,SEND_MONEY,20,0722000000,,*334# -> 1 -> 0722000000 -> 20,True
+syn_0630,Weka Zuku soo 1000,PAY_BILL,1000,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 1000,True
+syn_0280,Lipia net elfu 50,PAY_BILL,50,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 50,True
+syn_0949,Nipatie bundles ya elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0380,Paybill data amount 1500,PAY_BILL,1500,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 1500,True
+syn_0461,Tuma elfu moja kwa shosh,SEND_MONEY,1000,shosh,,*334# -> 1 -> shosh -> 1000,True
+syn_0639,Buy bundles za soo mbili kwa brathe,BUY_BUNDLES,200,brathe,,*334# -> 3 -> 2 -> 200,True
+syn_0989,Niongeze M-Pesa za fifty bob,BUY_BUNDLES,50,,M-Pesa,*334# -> 3 -> 2 -> 50,True
+syn_0741,Nishikie 0700112233 soo tano,SEND_MONEY,500,0700112233,,*334# -> 1 -> 0700112233 -> 500,True
+syn_0728,Nataka kuangalia balance kwa M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0897,Niongeze fifty bob chali yangu,BUY_AIRTIME,50,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 50,True
+syn_0487,Bao credit ya fifty bob kwa mzee,BUY_AIRTIME,50,mzee,,*334# -> 3 -> 1 -> mzee -> 50,True
+syn_0063,Niambie salio langu la net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0587,Weka kredit chapaa soo tano,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0402,Niongeze soo tano chali yangu,BUY_AIRTIME,500,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 500,True
+syn_0896,Neelekeze Weka bob mbao kwa mama,SEND_MONEY,20,mama,,*334# -> 1 -> mama -> 20,True
+syn_0022,Bao credit ya elfu moja kwa 0700112233,BUY_AIRTIME,1000,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 1000,True
+syn_0559,Tuma data ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0873,Balance ni gani kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0674,Buy bundles za punch kwa sis,BUY_BUNDLES,100,sis,,*334# -> 3 -> 2 -> 100,True
+syn_0456,Niletee cash fifty bob hapa shosh,SEND_MONEY,50,shosh,,*334# -> 1 -> shosh -> 50,True
+syn_0788,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0720,Paybill Safaricom amount 1000,PAY_BILL,1000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 1000,True
+syn_0958,Check balance ya Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0316,Tuma Ksh 100 to mzee,SEND_MONEY,100,mzee,,*334# -> 1 -> mzee -> 100,True
+syn_0477,Bao credit ya fifty bob kwa chali yangu,BUY_AIRTIME,50,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 50,True
+syn_0251,Niaje Nitumie soo mbili kwa 0700112233,SEND_MONEY,200,0700112233,,*334# -> 1 -> 0700112233 -> 200,True
+syn_0947,Niletee airtime ya chapaa soo tano,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0972,Niongeze soo tano 0798765432,BUY_AIRTIME,500,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 500,True
+syn_0433,Check salio token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0612,Lipa punch airtime line hii,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0166,Tuma Ksh 500 to brathe,SEND_MONEY,500,brathe,,*334# -> 1 -> brathe -> 500,True
+syn_0854,Nishikie bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0747,Bao credit ya soo mbili kwa mama,BUY_AIRTIME,200,mama,,*334# -> 3 -> 1 -> mama -> 200,True
+syn_0435,Lipia data elfu 1000,PAY_BILL,1000,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 1000,True
+syn_0201,Tuma Ksh 1500 to brathe,SEND_MONEY,1500,brathe,,*334# -> 1 -> brathe -> 1500,True
+syn_0135,Paybill token amount 5000,PAY_BILL,5000,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 5000,True
+syn_0367,Can I get punch airtime,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0604,Niongeze Zuku za mbao,BUY_BUNDLES,20,,Zuku,*334# -> 3 -> 2 -> 20,True
+syn_0143,How much money is in my Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0253,Nataka kuangalia balance kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0767,Can I get Ksh 500 airtime,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0324,Tuma data ya elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0737,Niongeze Ksh 500 0700112233,BUY_AIRTIME,500,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 500,True
+syn_0082,Weka soo tano airtime line hii,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0312,Niletee kredit mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0790,Paybill net amount 500,PAY_BILL,500,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 500,True
+syn_0886,Niletee soo mbili kwa sis,SEND_MONEY,200,sis,,*334# -> 1 -> sis -> 200,True
+syn_0199,Send data ya bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0766,Neelekeze Nitumie soo tano kwa mzee,SEND_MONEY,500,mzee,,*334# -> 1 -> mzee -> 500,True
+syn_0870,Niletee data soo 1500,PAY_BILL,1500,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 1500,True
+syn_0791,Tuma Ksh 500 to 0712345678,SEND_MONEY,500,0712345678,,*334# -> 1 -> 0712345678 -> 500,True
+syn_0994,Nishikie bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0020,Lipa Zuku account chali yangu amount 50,PAY_BILL,50,chali yangu,Zuku,*334# -> 2 -> 1 -> Zuku -> chali yangu -> 50,True
+syn_0712,Niletee airtime ya bob mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0748,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0661,Niaje Niletee elfu mbili kwa 0722000000,SEND_MONEY,2000,0722000000,,*334# -> 1 -> 0722000000 -> 2000,True
+syn_0387,Bao credit ya chapaa soo tano kwa shosh,BUY_AIRTIME,500,shosh,,*334# -> 3 -> 1 -> shosh -> 500,True
+syn_0731,Neelekeze Tuma fifty bob kwa 0722000000,SEND_MONEY,50,0722000000,,*334# -> 1 -> 0722000000 -> 50,True
+syn_0348,Check salio net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0395,Paybill Zuku amount 500,PAY_BILL,500,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 500,True
+syn_0137,Nishikie fifty bob airtime line hii,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0908,How much money is in my data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0840,Lipia data elfu 200,PAY_BILL,200,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 200,True
+syn_0489,Nishikie bundles za chapaa soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0235,Paybill KPLC amount 100,PAY_BILL,100,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 100,True
+syn_0910,Paybill net amount 1000,PAY_BILL,1000,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 1000,True
+syn_0410,Lipa M-Pesa account shosh amount 5000,PAY_BILL,5000,shosh,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> shosh -> 5000,True
+syn_0066,Weka elfu moja kwa 0798765432,SEND_MONEY,1000,0798765432,,*334# -> 1 -> 0798765432 -> 1000,True
+syn_0827,Lipa kredit ya punch kwa number 0798765432,BUY_AIRTIME,100,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 100,True
+syn_0504,Nipatie bundles ya bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0953,Nataka kuangalia balance kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0742,Can I get punch airtime,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0219,Nahitaji data bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0436,Lipa brathe soo tano,SEND_MONEY,500,brathe,,*334# -> 1 -> brathe -> 500,True
+syn_0871,Niaje Weka chapaa soo tano kwa 0712345678,SEND_MONEY,500,0712345678,,*334# -> 1 -> 0712345678 -> 500,True
+syn_0622,Lipa bob mbao airtime line hii,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0317,Lipa kredit ya punch kwa number 0798765432,BUY_AIRTIME,100,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 100,True
+syn_0225,Paybill Zuku amount 2000,PAY_BILL,2000,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 2000,True
+syn_0068,Check balance ya token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0449,Nahitaji data bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0638,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0406,Neelekeze Tuma punch kwa 0798765432,SEND_MONEY,100,0798765432,,*334# -> 1 -> 0798765432 -> 100,True
+syn_0013,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0820,Lipa Zuku soo 100,PAY_BILL,100,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 100,True
+syn_0215,Lipa net account mama amount 5000,PAY_BILL,5000,mama,net,*334# -> 2 -> 1 -> net -> mama -> 5000,True
+syn_0997,Tuma kredit elfu mbili,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0925,Lipia data elfu 5000,PAY_BILL,5000,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 5000,True
+syn_0033,How much money is in my token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0266,Niaje Nishikie soo tano kwa 0798765432,SEND_MONEY,500,0798765432,,*334# -> 1 -> 0798765432 -> 500,True
+syn_0172,Nishikie kredit ya soo mbili kwa number 0700112233,BUY_AIRTIME,200,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 200,True
+syn_0330,Lipia Safaricom elfu 1500,PAY_BILL,1500,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 1500,True
+syn_0670,Lipa Zuku account 0712345678 amount 100,PAY_BILL,100,0712345678,Zuku,*334# -> 2 -> 1 -> Zuku -> 0712345678 -> 100,True
+syn_0189,Nahitaji data bundles za soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0027,Niongeze mbao mama,BUY_AIRTIME,20,mama,,*334# -> 3 -> 1 -> mama -> 20,True
+syn_0044,Nipatie bundles ya chapaa soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0126,Tuma Ksh 500 direct kwa brathe,SEND_MONEY,500,brathe,,*334# -> 1 -> brathe -> 500,True
+syn_0418,Nataka kuangalia balance kwa net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0623,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0839,Nahitaji data bundles za chapaa soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0282,Bao credit ya bob mbao kwa 0712345678,BUY_AIRTIME,20,0712345678,,*334# -> 3 -> 1 -> 0712345678 -> 20,True
+syn_0202,Niletee airtime ya bob mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0510,Tuma Safaricom soo 50,PAY_BILL,50,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 50,True
+syn_0835,Lipa Safaricom account sis amount 200,PAY_BILL,200,sis,Safaricom,*334# -> 2 -> 1 -> Safaricom -> sis -> 200,True
+syn_0981,Niaje Lipa fifty bob kwa chali yangu,SEND_MONEY,50,chali yangu,,*334# -> 1 -> chali yangu -> 50,True
+syn_0070,Lipia KPLC elfu 1000,PAY_BILL,1000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 1000,True
+syn_0984,Nishikie bundles za bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0081,Niaje Lipa punch kwa 0798765432,SEND_MONEY,100,0798765432,,*334# -> 1 -> 0798765432 -> 100,True
+syn_0726,Weka shosh soo tano,SEND_MONEY,500,shosh,,*334# -> 1 -> shosh -> 500,True
+syn_0246,Can you Weka Ksh 500 to 0712345678,SEND_MONEY,500,0712345678,,*334# -> 1 -> 0712345678 -> 500,True
+syn_0738,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0326,Nitumie mama elfu moja,SEND_MONEY,1000,mama,,*334# -> 1 -> mama -> 1000,True
+syn_0411,Lipa fifty bob kwa 0722000000,SEND_MONEY,50,0722000000,,*334# -> 1 -> 0722000000 -> 50,True
+syn_0768,Balance ni gani kwa data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0593,Niambie salio langu la net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0833,How much money is in my token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0944,Send data ya punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0681,Neelekeze Lipa soo mbili kwa sis,SEND_MONEY,200,sis,,*334# -> 1 -> sis -> 200,True
+syn_0874,Buy bundles za elfu moja kwa mzee,BUY_BUNDLES,1000,mzee,,*334# -> 3 -> 2 -> 1000,True
+syn_0922,Nitumie airtime ya punch,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0703,Niambie salio langu la net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0035,Send M-Pesa soo 5000,PAY_BILL,5000,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 5000,True
+syn_0983,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0087,Niletee kredit ya elfu moja kwa number 0712345678,BUY_AIRTIME,1000,0712345678,,*334# -> 3 -> 1 -> 0712345678 -> 1000,True
+syn_0891,Neelekeze Tuma Ksh 500 kwa mama,SEND_MONEY,500,mama,,*334# -> 1 -> mama -> 500,True
+syn_0745,Lipia Zuku elfu 5000,PAY_BILL,5000,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 5000,True
+syn_0582,Weka kredit ya punch kwa number 0700112233,BUY_AIRTIME,100,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 100,True
+syn_0145,Lipia data elfu 50,PAY_BILL,50,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 50,True
+syn_0271,Nishikie soo tano kwa mama,SEND_MONEY,500,mama,,*334# -> 1 -> mama -> 500,True
+syn_0869,Niletee data ya elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0072,Can I get fifty bob airtime,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0106,Niaje Lipa soo tano kwa 0722000000,SEND_MONEY,500,0722000000,,*334# -> 1 -> 0722000000 -> 500,True
+syn_0769,Nishikie bundles za punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0659,Niletee data ya punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0762,Niletee kredit ya soo tano kwa number mama,BUY_AIRTIME,500,mama,,*334# -> 3 -> 1 -> mama -> 500,True
+syn_0900,Paybill data amount 5000,PAY_BILL,5000,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 5000,True
+syn_0333,Niambie salio langu la data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0912,Weka Ksh 500 airtime line hii,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0086,Niletee cash punch hapa 0700112233,SEND_MONEY,100,0700112233,,*334# -> 1 -> 0700112233 -> 100,True
+syn_0663,Check balance ya M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0065,Paybill M-Pesa amount 500,PAY_BILL,500,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 500,True
+syn_0906,Nitumie cash punch hapa mzee,SEND_MONEY,100,mzee,,*334# -> 1 -> mzee -> 100,True
+syn_0412,Weka kredit ya punch kwa number brathe,BUY_AIRTIME,100,brathe,,*334# -> 3 -> 1 -> brathe -> 100,True
+syn_0800,Paybill net amount 50,PAY_BILL,50,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 50,True
+syn_0341,Neelekeze Lipa bob mbao kwa 0798765432,SEND_MONEY,20,0798765432,,*334# -> 1 -> 0798765432 -> 20,True
+syn_0337,Send airtime ya Ksh 500,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0528,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0374,Nipatie bundles ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0700,Lipia Safaricom elfu 1000,PAY_BILL,1000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 1000,True
+syn_0645,Lipa data account 0712345678 amount 200,PAY_BILL,200,0712345678,data,*334# -> 2 -> 1 -> data -> 0712345678 -> 200,True
+syn_0407,Lipa airtime ya Ksh 500,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0236,Niletee 0700112233 punch,SEND_MONEY,100,0700112233,,*334# -> 1 -> 0700112233 -> 100,True
+syn_0343,Check salio Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0197,Niongeze fifty bob 0722000000,BUY_AIRTIME,50,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 50,True
+syn_0257,Bao credit ya elfu mbili kwa shosh,BUY_AIRTIME,2000,shosh,,*334# -> 3 -> 1 -> shosh -> 2000,True
+syn_0615,Lipa bill ya data Ksh 1000,PAY_BILL,1000,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 1000,True
+syn_0653,Check salio Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0177,Niongeze mbao shosh,BUY_AIRTIME,20,shosh,,*334# -> 3 -> 1 -> shosh -> 20,True
+syn_0416,Weka cash Ksh 500 hapa shosh,SEND_MONEY,500,shosh,,*334# -> 1 -> shosh -> 500,True
+syn_0206,Niaje Nishikie soo tano kwa chali yangu,SEND_MONEY,500,chali yangu,,*334# -> 1 -> chali yangu -> 500,True
+syn_0887,Niongeze elfu moja mzee,BUY_AIRTIME,1000,mzee,,*334# -> 3 -> 1 -> mzee -> 1000,True
+syn_0147,Nishikie airtime ya elfu moja,BUY_AIRTIME,1000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 1000,True
+syn_0265,Lipa M-Pesa account sis amount 1500,PAY_BILL,1500,sis,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> sis -> 1500,True
+syn_0634,Tuma data ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0181,Nishikie chali yangu mbao,SEND_MONEY,20,chali yangu,,*334# -> 1 -> chali yangu -> 20,True
+syn_0252,Niletee kredit ya elfu moja kwa number shosh,BUY_AIRTIME,1000,shosh,,*334# -> 3 -> 1 -> shosh -> 1000,True
+syn_0599,Nipatie bundles ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0541,Lipa cash elfu moja hapa 0712345678,SEND_MONEY,1000,0712345678,,*334# -> 1 -> 0712345678 -> 1000,True
+syn_0990,Niletee token soo 1500,PAY_BILL,1500,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 1500,True
+syn_0849,Nishikie bundles za fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0515,Nishikie token soo 50,PAY_BILL,50,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 50,True
+syn_0534,Nahitaji data bundles za fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0649,Buy bundles za Ksh 500 kwa brathe,BUY_BUNDLES,500,brathe,,*334# -> 3 -> 2 -> 500,True
+syn_0595,Lipa token account mzee amount 5000,PAY_BILL,5000,mzee,token,*334# -> 2 -> 1 -> token -> mzee -> 5000,True
+syn_0162,Can I get punch airtime,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0507,Can I get chapaa soo tano airtime,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0721,Tuma Ksh 5000 to shosh,SEND_MONEY,5000,shosh,,*334# -> 1 -> shosh -> 5000,True
+syn_0388,Check balance ya Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0322,Bao credit ya elfu moja kwa 0798765432,BUY_AIRTIME,1000,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 1000,True
+syn_0557,Nitumie elfu moja airtime line hii,BUY_AIRTIME,1000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 1000,True
+syn_0334,Buy bundles za fifty bob kwa 0712345678,BUY_BUNDLES,50,0712345678,,*334# -> 3 -> 2 -> 50,True
+syn_0245,Paybill data amount 200,PAY_BILL,200,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 200,True
+syn_0554,Buy bundles za mbao kwa mama,BUY_BUNDLES,20,mama,,*334# -> 3 -> 2 -> 20,True
+syn_0185,Paybill token amount 200,PAY_BILL,200,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 200,True
+syn_0644,Buy bundles za soo mbili kwa mzee,BUY_BUNDLES,200,mzee,,*334# -> 3 -> 2 -> 200,True
+syn_0438,Nataka kuangalia balance kwa KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0440,Lipa bill ya net Ksh 2000,PAY_BILL,2000,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 2000,True
+syn_0335,Paybill net amount 2000,PAY_BILL,2000,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 2000,True
+syn_0059,Nishikie bundles za punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0620,Lipa bill ya Zuku Ksh 500,PAY_BILL,500,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 500,True
+syn_0914,Nishikie bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0999,Niongeze M-Pesa za fifty bob,BUY_BUNDLES,50,,M-Pesa,*334# -> 3 -> 2 -> 50,True
+syn_0109,Nahitaji data bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0904,Niletee data ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0347,Can I get elfu mbili airtime,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0992,Can I get Ksh 500 airtime,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0505,Paybill token amount 2000,PAY_BILL,2000,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 2000,True
+syn_0288,How much money is in my Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0752,Nitumie kredit chapaa soo tano,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0204,Nishikie bundles za elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0413,Check salio Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0142,Bao credit ya soo mbili kwa 0712345678,BUY_AIRTIME,200,0712345678,,*334# -> 3 -> 1 -> 0712345678 -> 200,True
+syn_0888,Nataka kuangalia balance kwa net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0454,Niongeze data za soo tano,BUY_BUNDLES,500,,data,*334# -> 3 -> 2 -> 500,True
+syn_0699,Buy bundles za elfu moja kwa brathe,BUY_BUNDLES,1000,brathe,,*334# -> 3 -> 2 -> 1000,True
+syn_0682,Bao credit ya elfu mbili kwa 0722000000,BUY_AIRTIME,2000,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 2000,True
+syn_0004,Niongeze token za elfu moja,BUY_BUNDLES,1000,,token,*334# -> 3 -> 2 -> 1000,True
+syn_0049,Buy bundles za soo tano kwa brathe,BUY_BUNDLES,500,brathe,,*334# -> 3 -> 2 -> 500,True
+syn_0579,Nahitaji data bundles za soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0757,Weka kredit fifty bob,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0917,Send kredit soo mbili,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0056,Can you Send mbao to 0798765432,SEND_MONEY,20,0798765432,,*334# -> 1 -> 0798765432 -> 20,True
+syn_0221,Send cash fifty bob hapa 0798765432,SEND_MONEY,50,0798765432,,*334# -> 1 -> 0798765432 -> 50,True
+syn_0426,Tuma bob mbao direct kwa 0798765432,SEND_MONEY,20,0798765432,,*334# -> 1 -> 0798765432 -> 20,True
+syn_0434,Niongeze Zuku za fifty bob,BUY_BUNDLES,50,,Zuku,*334# -> 3 -> 2 -> 50,True
+syn_0678,Nataka kuangalia balance kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0216,Niaje Nishikie fifty bob kwa mzee,SEND_MONEY,50,mzee,,*334# -> 1 -> mzee -> 50,True
+syn_0698,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0894,Nahitaji data bundles za chapaa soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0294,Nipatie bundles ya chapaa soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0198,Balance ni gani kwa data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0511,Can you Send fifty bob to 0712345678,SEND_MONEY,50,0712345678,,*334# -> 1 -> 0712345678 -> 50,True
+syn_0898,How much money is in my data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0934,Nahitaji data bundles za Ksh 500,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0039,Niongeze Safaricom za punch,BUY_BUNDLES,100,,Safaricom,*334# -> 3 -> 2 -> 100,True
+syn_0851,Tuma Ksh 5000 to 0798765432,SEND_MONEY,5000,0798765432,,*334# -> 1 -> 0798765432 -> 5000,True
+syn_0585,Lipia token elfu 100,PAY_BILL,100,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 100,True
+syn_0960,Lipia token elfu 50,PAY_BILL,50,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 50,True
+syn_0040,Lipa bill ya token Ksh 5000,PAY_BILL,5000,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 5000,True
+syn_0007,Weka elfu mbili airtime line hii,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0550,Lipia KPLC elfu 2000,PAY_BILL,2000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 2000,True
+syn_0448,Niambie salio langu la net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0786,Nishikie chali yangu bob mbao,SEND_MONEY,20,chali yangu,,*334# -> 1 -> chali yangu -> 20,True
+syn_0942,Weka airtime ya soo tano,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0264,Nishikie bundles za mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0633,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0146,Weka brathe elfu moja,SEND_MONEY,1000,brathe,,*334# -> 1 -> brathe -> 1000,True
+syn_0621,Nishikie cash punch hapa mzee,SEND_MONEY,100,mzee,,*334# -> 1 -> mzee -> 100,True
+syn_0662,Can I get punch airtime,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0830,Lipa bill ya token Ksh 500,PAY_BILL,500,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 500,True
+syn_0159,Send data ya soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0459,Nipatie bundles ya punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0256,Niaje Weka mbao kwa brathe,SEND_MONEY,20,brathe,,*334# -> 1 -> brathe -> 20,True
+syn_0940,Lipa net account mama amount 1000,PAY_BILL,1000,mama,net,*334# -> 2 -> 1 -> net -> mama -> 1000,True
+syn_0430,Lipia M-Pesa elfu 100,PAY_BILL,100,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 100,True
+syn_0394,Niongeze Zuku za soo mbili,BUY_BUNDLES,200,,Zuku,*334# -> 3 -> 2 -> 200,True
+syn_0978,Niambie salio langu la data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0985,Lipia KPLC elfu 5000,PAY_BILL,5000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 5000,True
+syn_0227,Niongeze soo mbili 0712345678,BUY_AIRTIME,200,0712345678,,*334# -> 3 -> 1 -> 0712345678 -> 200,True
+syn_0472,Niletee kredit fifty bob,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0492,Lipa kredit ya soo mbili kwa number 0798765432,BUY_AIRTIME,200,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 200,True
+syn_0283,Balance ni gani kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0356,Neelekeze Lipa bob mbao kwa 0700112233,SEND_MONEY,20,0700112233,,*334# -> 1 -> 0700112233 -> 20,True
+syn_0075,Lipa bill ya KPLC Ksh 1500,PAY_BILL,1500,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 1500,True
+syn_0439,Nipatie bundles ya soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0196,Tuma Ksh 5000 to mzee,SEND_MONEY,5000,mzee,,*334# -> 1 -> mzee -> 5000,True
+syn_0542,Tuma kredit ya elfu mbili kwa number shosh,BUY_AIRTIME,2000,shosh,,*334# -> 3 -> 1 -> shosh -> 2000,True
+syn_0378,Balance ni gani kwa Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0443,Niambie salio langu la token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0862,Send kredit soo mbili,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0562,Lipa fifty bob airtime line hii,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0531,Nitumie 0700112233 elfu moja,SEND_MONEY,1000,0700112233,,*334# -> 1 -> 0700112233 -> 1000,True
+syn_0717,Weka airtime ya elfu mbili,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0560,Paybill KPLC amount 500,PAY_BILL,500,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 500,True
+syn_0732,Weka chapaa soo tano airtime line hii,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0879,Nipatie bundles ya elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0415,Lipa bill ya token Ksh 50,PAY_BILL,50,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 50,True
+syn_0208,How much money is in my net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0098,Nataka kuangalia balance kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0339,Nishikie bundles za bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0735,Lipa M-Pesa account brathe amount 200,PAY_BILL,200,brathe,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> brathe -> 200,True
+syn_0991,Nitumie 0712345678 elfu mbili,SEND_MONEY,2000,0712345678,,*334# -> 1 -> 0712345678 -> 2000,True
+syn_0242,Lipa airtime ya mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0473,How much money is in my net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0161,Tuma fifty bob kwa brathe,SEND_MONEY,50,brathe,,*334# -> 1 -> brathe -> 50,True
+syn_0350,Lipia M-Pesa elfu 500,PAY_BILL,500,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 500,True
+syn_0026,Nishikie elfu mbili kwa mzee,SEND_MONEY,2000,mzee,,*334# -> 1 -> mzee -> 2000,True
+syn_0509,Niongeze token za fifty bob,BUY_BUNDLES,50,,token,*334# -> 3 -> 2 -> 50,True
+syn_0522,Niongeze soo tano 0700112233,BUY_AIRTIME,500,0700112233,,*334# -> 3 -> 1 -> 0700112233 -> 500,True
+syn_0675,Lipa bill ya net Ksh 100,PAY_BILL,100,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 100,True
+syn_0229,Nipatie bundles ya fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0067,Can I get mbao airtime,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0956,Tuma elfu moja direct kwa shosh,SEND_MONEY,1000,shosh,,*334# -> 1 -> shosh -> 1000,True
+syn_0858,Nataka kuangalia balance kwa net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0311,Weka cash elfu moja hapa mama,SEND_MONEY,1000,mama,,*334# -> 1 -> mama -> 1000,True
+syn_0860,Niletee Zuku soo 50,PAY_BILL,50,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 50,True
+syn_0724,Nipatie bundles ya elfu mbili,BUY_BUNDLES,2000,,,*334# -> 3 -> 2 -> 2000,True
+syn_0637,Tuma airtime ya soo tano,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0725,Lipa Zuku account 0712345678 amount 1000,PAY_BILL,1000,0712345678,Zuku,*334# -> 2 -> 1 -> Zuku -> 0712345678 -> 1000,True
+syn_0042,Weka kredit ya elfu mbili kwa number sis,BUY_AIRTIME,2000,sis,,*334# -> 3 -> 1 -> sis -> 2000,True
+syn_0273,Nataka kuangalia balance kwa M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0117,Niletee airtime ya bob mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0103,Balance ni gani kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0686,Nishikie chapaa soo tano kwa chali yangu,SEND_MONEY,500,chali yangu,,*334# -> 1 -> chali yangu -> 500,True
+syn_0224,Nishikie bundles za Ksh 500,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0668,Balance ni gani kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0758,Check balance ya token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0635,Lipia KPLC elfu 100,PAY_BILL,100,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 100,True
+syn_0111,Send mama Ksh 500,SEND_MONEY,500,mama,,*334# -> 1 -> mama -> 500,True
+syn_0498,Nataka kuangalia balance kwa data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0307,Niletee soo mbili airtime line hii,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0773,Balance ni gani kwa M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0078,Check balance ya token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0180,Lipia KPLC elfu 1000,PAY_BILL,1000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 1000,True
+syn_0090,Niletee Safaricom soo 2000,PAY_BILL,2000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 2000,True
+syn_0964,Niongeze M-Pesa za soo mbili,BUY_BUNDLES,200,,M-Pesa,*334# -> 3 -> 2 -> 200,True
+syn_0470,Paybill net amount 50,PAY_BILL,50,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 50,True
+syn_0792,Nishikie airtime ya soo tano,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0300,Lipia Safaricom elfu 2000,PAY_BILL,2000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 2000,True
+syn_0586,Neelekeze Nishikie bob mbao kwa shosh,SEND_MONEY,20,shosh,,*334# -> 1 -> shosh -> 20,True
+syn_0403,Check salio KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0210,Send token soo 1500,PAY_BILL,1500,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 1500,True
+syn_0174,Niletee data ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0451,Can you Nishikie elfu moja to mama,SEND_MONEY,1000,mama,,*334# -> 1 -> mama -> 1000,True
+syn_0716,Lipa cash elfu moja hapa mzee,SEND_MONEY,1000,mzee,,*334# -> 1 -> mzee -> 1000,True
+syn_0801,Send cash fifty bob hapa 0798765432,SEND_MONEY,50,0798765432,,*334# -> 1 -> 0798765432 -> 50,True
+syn_0083,Niambie salio langu la M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0024,Buy bundles za Ksh 500 kwa mzee,BUY_BUNDLES,500,mzee,,*334# -> 3 -> 2 -> 500,True
+syn_0796,Tuma Ksh 5000 to 0700112233,SEND_MONEY,5000,0700112233,,*334# -> 1 -> 0700112233 -> 5000,True
+syn_0834,Nipatie bundles ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0342,Bao credit ya fifty bob kwa 0798765432,BUY_AIRTIME,50,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 50,True
+syn_0295,Lipa bill ya net Ksh 500,PAY_BILL,500,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 500,True
+syn_0915,Paybill token amount 200,PAY_BILL,200,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 200,True
+syn_0517,Niletee Ksh 500 airtime line hii,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0603,Check salio net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0959,Nahitaji data bundles za elfu moja,BUY_BUNDLES,1000,,,*334# -> 3 -> 2 -> 1000,True
+syn_0077,Send chapaa soo tano airtime line hii,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0539,Weka data ya Ksh 500,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0923,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0006,Niaje Nitumie chapaa soo tano kwa brathe,SEND_MONEY,500,brathe,,*334# -> 1 -> brathe -> 500,True
+syn_0722,Tuma elfu mbili airtime line hii,BUY_AIRTIME,2000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 2000,True
+syn_0596,Niletee cash soo mbili hapa brathe,SEND_MONEY,200,brathe,,*334# -> 1 -> brathe -> 200,True
+syn_0029,Nishikie bundles za bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0371,Can you Nishikie elfu mbili to sis,SEND_MONEY,2000,sis,,*334# -> 1 -> sis -> 2000,True
+syn_0821,Nishikie cash fifty bob hapa mzee,SEND_MONEY,50,mzee,,*334# -> 1 -> mzee -> 50,True
+syn_0692,Niongeze mbao brathe,BUY_AIRTIME,20,brathe,,*334# -> 3 -> 1 -> brathe -> 20,True
+syn_0710,Paybill Safaricom amount 2000,PAY_BILL,2000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 2000,True
+syn_0314,Nahitaji data bundles za bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0828,Check salio net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0607,Bao credit ya soo tano kwa mama,BUY_AIRTIME,500,mama,,*334# -> 3 -> 1 -> mama -> 500,True
+syn_0310,Lipa Zuku account mzee amount 1000,PAY_BILL,1000,mzee,Zuku,*334# -> 2 -> 1 -> Zuku -> mzee -> 1000,True
+syn_0666,Neelekeze Weka chapaa soo tano kwa 0722000000,SEND_MONEY,500,0722000000,,*334# -> 1 -> 0722000000 -> 500,True
+syn_0837,Send soo mbili airtime line hii,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0843,How much money is in my data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0844,Nahitaji data bundles za fifty bob,BUY_BUNDLES,50,,,*334# -> 3 -> 2 -> 50,True
+syn_0624,Nipatie bundles ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0336,Tuma punch direct kwa sis,SEND_MONEY,100,sis,,*334# -> 1 -> sis -> 100,True
+syn_0193,Niambie salio langu la KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0010,Nitumie Zuku soo 1500,PAY_BILL,1500,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 1500,True
+syn_0381,Tuma Ksh 1500 to 0798765432,SEND_MONEY,1500,0798765432,,*334# -> 1 -> 0798765432 -> 1500,True
+syn_0913,Balance ni gani kwa Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0859,Niletee data ya mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0549,Send data ya bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0450,Lipa M-Pesa account shosh amount 5000,PAY_BILL,5000,shosh,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> shosh -> 5000,True
+syn_0646,Tuma Ksh 500 to 0798765432,SEND_MONEY,500,0798765432,,*334# -> 1 -> 0798765432 -> 500,True
+syn_0054,Nahitaji data bundles za mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0278,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0626,Can you Tuma bob mbao to chali yangu,SEND_MONEY,20,chali yangu,,*334# -> 1 -> chali yangu -> 20,True
+syn_0974,Nishikie bundles za mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0480,Lipa bill ya Zuku Ksh 2000,PAY_BILL,2000,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 2000,True
+syn_0446,Tuma Ksh 50 to brathe,SEND_MONEY,50,brathe,,*334# -> 1 -> brathe -> 50,True
+syn_0015,Lipa bill ya net Ksh 50,PAY_BILL,50,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 50,True
+syn_0608,Check balance ya Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0025,Lipia token elfu 2000,PAY_BILL,2000,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 2000,True
+syn_0711,Weka mzee chapaa soo tano,SEND_MONEY,500,mzee,,*334# -> 1 -> mzee -> 500,True
+syn_0718,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0614,Nishikie bundles za soo tano,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0097,Bao credit ya chapaa soo tano kwa brathe,BUY_AIRTIME,500,brathe,,*334# -> 3 -> 1 -> brathe -> 500,True
+syn_0355,Niletee token soo 1000,PAY_BILL,1000,,token,*334# -> 2 -> 1 -> token -> [RECIPIENT] -> 1000,True
+syn_0369,Niongeze M-Pesa za fifty bob,BUY_BUNDLES,50,,M-Pesa,*334# -> 3 -> 2 -> 50,True
+syn_0823,How much money is in my KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0980,Paybill M-Pesa amount 200,PAY_BILL,200,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 200,True
+syn_0057,Nishikie kredit soo mbili,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0127,Niongeze punch 0798765432,BUY_AIRTIME,100,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 100,True
+syn_0580,Lipa bill ya KPLC Ksh 200,PAY_BILL,200,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 200,True
+syn_0777,Can I get punch airtime,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0589,Nishikie bundles za mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0734,Nahitaji data bundles za punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0028,Niambie salio langu la Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0464,Nipatie bundles ya Ksh 500,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0073,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0327,Nitumie elfu moja airtime line hii,BUY_AIRTIME,1000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 1000,True
+syn_0948,Check salio data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0610,Lipa token account 0798765432 amount 100,PAY_BILL,100,0798765432,token,*334# -> 2 -> 1 -> token -> 0798765432 -> 100,True
+syn_0895,Lipa Zuku soo 5000,PAY_BILL,5000,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 5000,True
+syn_0428,Nataka kuangalia balance kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0052,Bao credit ya fifty bob kwa 0722000000,BUY_AIRTIME,50,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 50,True
+syn_0358,Nataka kuangalia balance kwa Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0797,Bao credit ya soo tano kwa chali yangu,BUY_AIRTIME,500,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 500,True
+syn_0812,Can I get chapaa soo tano airtime,BUY_AIRTIME,500,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 500,True
+syn_0945,Lipa KPLC account 0700112233 amount 100,PAY_BILL,100,0700112233,KPLC,*334# -> 2 -> 1 -> KPLC -> 0700112233 -> 100,True
+syn_0941,Tuma Ksh 500 direct kwa 0700112233,SEND_MONEY,500,0700112233,,*334# -> 1 -> 0700112233 -> 500,True
+syn_0134,Buy bundles za mbao kwa 0712345678,BUY_BUNDLES,20,0712345678,,*334# -> 3 -> 2 -> 20,True
+syn_0144,Nahitaji data bundles za punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0755,Lipa bill ya Zuku Ksh 100,PAY_BILL,100,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 100,True
+syn_0672,Nitumie kredit punch,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0297,Niletee kredit fifty bob,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0301,Can you Niletee soo tano to 0798765432,SEND_MONEY,500,0798765432,,*334# -> 1 -> 0798765432 -> 500,True
+syn_0552,Niletee airtime ya bob mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0970,Paybill KPLC amount 1000,PAY_BILL,1000,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 1000,True
+syn_0021,Tuma soo tano direct kwa 0712345678,SEND_MONEY,500,0712345678,,*334# -> 1 -> 0712345678 -> 500,True
+syn_0872,Tuma kredit ya soo tano kwa number 0798765432,BUY_AIRTIME,500,0798765432,,*334# -> 3 -> 1 -> 0798765432 -> 500,True
+syn_0962,Lipa kredit soo mbili,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0952,Lipa kredit punch,BUY_AIRTIME,100,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 100,True
+syn_0173,Nataka kuangalia balance kwa KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0136,Can you Send soo mbili to mama,SEND_MONEY,200,mama,,*334# -> 1 -> mama -> 200,True
+syn_0514,Niongeze token za soo mbili,BUY_BUNDLES,200,,token,*334# -> 3 -> 2 -> 200,True
+syn_0696,Can you Niletee soo mbili to 0712345678,SEND_MONEY,200,0712345678,,*334# -> 1 -> 0712345678 -> 200,True
+syn_0998,Niambie salio langu la M-Pesa,CHECK_BALANCE,,,M-Pesa,*334# -> 6 -> 1,True
+syn_0739,Nishikie bundles za Ksh 500,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0167,Send kredit mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0729,Niongeze data za Ksh 500,BUY_BUNDLES,500,,data,*334# -> 3 -> 2 -> 500,True
+syn_0535,Paybill data amount 50,PAY_BILL,50,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 50,True
+syn_0832,Lipa airtime ya elfu moja,BUY_AIRTIME,1000,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 1000,True
+syn_0606,Nishikie 0722000000 mbao,SEND_MONEY,20,0722000000,,*334# -> 1 -> 0722000000 -> 20,True
+syn_0641,Neelekeze Nitumie soo tano kwa 0722000000,SEND_MONEY,500,0722000000,,*334# -> 1 -> 0722000000 -> 500,True
+syn_0125,Lipa Safaricom account shosh amount 500,PAY_BILL,500,shosh,Safaricom,*334# -> 2 -> 1 -> Safaricom -> shosh -> 500,True
+syn_0277,Send kredit ya elfu moja kwa number chali yangu,BUY_AIRTIME,1000,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 1000,True
+syn_0882,Tuma fifty bob airtime line hii,BUY_AIRTIME,50,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 50,True
+syn_0234,Niongeze KPLC za bob mbao,BUY_BUNDLES,20,,KPLC,*334# -> 3 -> 2 -> 20,True
+syn_0158,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0853,How much money is in my data,CHECK_BALANCE,,,data,*334# -> 6 -> 1,True
+syn_0627,Niongeze bob mbao chali yangu,BUY_AIRTIME,20,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 20,True
+syn_0540,Lipa Safaricom account mama amount 1000,PAY_BILL,1000,mama,Safaricom,*334# -> 2 -> 1 -> Safaricom -> mama -> 1000,True
+syn_0396,Tuma Ksh 50 to mzee,SEND_MONEY,50,mzee,,*334# -> 1 -> mzee -> 50,True
+syn_0164,Niongeze net za elfu moja,BUY_BUNDLES,1000,,net,*334# -> 3 -> 2 -> 1000,True
+syn_0526,Nitumie mama punch,SEND_MONEY,100,mama,,*334# -> 1 -> mama -> 100,True
+syn_0128,How much money is in my KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0462,Tuma kredit ya punch kwa number brathe,BUY_AIRTIME,100,brathe,,*334# -> 3 -> 1 -> brathe -> 100,True
+syn_0071,Niaje Lipa fifty bob kwa chali yangu,SEND_MONEY,50,chali yangu,,*334# -> 1 -> chali yangu -> 50,True
+syn_0740,Lipia Zuku elfu 2000,PAY_BILL,2000,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 2000,True
+syn_0313,How much money is in my Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0810,Nishikie data soo 500,PAY_BILL,500,,data,*334# -> 2 -> 1 -> data -> [RECIPIENT] -> 500,True
+syn_0687,Weka airtime ya bob mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0512,Nitumie kredit ya punch kwa number chali yangu,BUY_AIRTIME,100,chali yangu,,*334# -> 3 -> 1 -> chali yangu -> 100,True
+syn_0119,Nishikie bundles za mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0597,Nishikie airtime ya soo mbili,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0169,Nipatie bundles ya punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0743,Nataka kuangalia balance kwa Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0936,Neelekeze Send chapaa soo tano kwa sis,SEND_MONEY,500,sis,,*334# -> 1 -> sis -> 500,True
+syn_0532,Bao credit ya Ksh 500 kwa 0722000000,BUY_AIRTIME,500,0722000000,,*334# -> 3 -> 1 -> 0722000000 -> 500,True
+syn_0760,Lipa token account brathe amount 1000,PAY_BILL,1000,brathe,token,*334# -> 2 -> 1 -> token -> brathe -> 1000,True
+syn_0002,Bao credit ya soo mbili kwa 0712345678,BUY_AIRTIME,200,0712345678,,*334# -> 3 -> 1 -> 0712345678 -> 200,True
+syn_0544,Nipatie bundles ya soo mbili,BUY_BUNDLES,200,,,*334# -> 3 -> 2 -> 200,True
+syn_0468,Check balance ya Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0368,How much money is in my Safaricom,CHECK_BALANCE,,,Safaricom,*334# -> 6 -> 1,True
+syn_0570,Nitumie M-Pesa soo 1500,PAY_BILL,1500,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 1500,True
+syn_0691,Tuma bob mbao kwa sis,SEND_MONEY,20,sis,,*334# -> 1 -> sis -> 20,True
+syn_0484,Nahitaji data bundles za punch,BUY_BUNDLES,100,,,*334# -> 3 -> 2 -> 100,True
+syn_0475,Tuma M-Pesa soo 1500,PAY_BILL,1500,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 1500,True
+syn_0783,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0751,Can you Nishikie mbao to sis,SEND_MONEY,20,sis,,*334# -> 1 -> sis -> 20,True
+syn_0230,Nishikie Safaricom soo 2000,PAY_BILL,2000,,Safaricom,*334# -> 2 -> 1 -> Safaricom -> [RECIPIENT] -> 2000,True
+syn_0241,Neelekeze Niletee elfu mbili kwa 0798765432,SEND_MONEY,2000,0798765432,,*334# -> 1 -> 0798765432 -> 2000,True
+syn_0373,Niambie salio langu la Zuku,CHECK_BALANCE,,,Zuku,*334# -> 6 -> 1,True
+syn_0163,How much money is in my KPLC,CHECK_BALANCE,,,KPLC,*334# -> 6 -> 1,True
+syn_0092,Lipa kredit soo mbili,BUY_AIRTIME,200,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 200,True
+syn_0362,Tuma airtime ya mbao,BUY_AIRTIME,20,,,*334# -> 3 -> 1 -> [RECIPIENT] -> 20,True
+syn_0930,Lipia M-Pesa elfu 5000,PAY_BILL,5000,,M-Pesa,*334# -> 2 -> 1 -> M-Pesa -> [RECIPIENT] -> 5000,True
+syn_0617,Bao credit ya bob mbao kwa shosh,BUY_AIRTIME,20,shosh,,*334# -> 3 -> 1 -> shosh -> 20,True
+syn_0523,Nionyeshe balance,CHECK_BALANCE,,,,*334# -> 6 -> 1,True
+syn_0093,How much money is in my net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0730,Lipia net elfu 1000,PAY_BILL,1000,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 1000,True
+syn_0107,Weka kredit ya elfu moja kwa number mama,BUY_AIRTIME,1000,mama,,*334# -> 3 -> 1 -> mama -> 1000,True
+syn_0329,Buy bundles za soo tano kwa sis,BUY_BUNDLES,500,sis,,*334# -> 3 -> 2 -> 500,True
+syn_0890,Lipa bill ya Zuku Ksh 5000,PAY_BILL,5000,,Zuku,*334# -> 2 -> 1 -> Zuku -> [RECIPIENT] -> 5000,True
+syn_0034,Buy bundles za elfu mbili kwa chali yangu,BUY_BUNDLES,2000,chali yangu,,*334# -> 3 -> 2 -> 2000,True
+syn_0064,Nishikie bundles za bob mbao,BUY_BUNDLES,20,,,*334# -> 3 -> 2 -> 20,True
+syn_0819,Nishikie bundles za Ksh 500,BUY_BUNDLES,500,,,*334# -> 3 -> 2 -> 500,True
+syn_0080,Lipa bill ya net Ksh 1500,PAY_BILL,1500,,net,*334# -> 2 -> 1 -> net -> [RECIPIENT] -> 1500,True
+syn_0618,Balance ni gani kwa token,CHECK_BALANCE,,,token,*334# -> 6 -> 1,True
+syn_0650,Nishikie KPLC soo 500,PAY_BILL,500,,KPLC,*334# -> 2 -> 1 -> KPLC -> [RECIPIENT] -> 500,True
+syn_0148,Check balance ya net,CHECK_BALANCE,,,net,*334# -> 6 -> 1,True
+syn_0084,Niongeze token za bob mbao,BUY_BUNDLES,20,,token,*334# -> 3 -> 2 -> 20,True
+syn_0226,Neelekeze Nishikie mbao kwa mzee,SEND_MONEY,20,mzee,,*334# -> 1 -> mzee -> 20,True
