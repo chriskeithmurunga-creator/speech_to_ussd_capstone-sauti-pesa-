@@ -37,7 +37,7 @@ speech-to-ussd/
 ## Usage
 
 ```bash
-pip install -r requirements.tx
+pip install -r requirements.txt
 python main.py --audio sample.wav
 ```
 
