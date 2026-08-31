@@ -14,3 +14,6 @@ data/raw/transcripts/venv/
 __pychache__
 *.pyc
 venv/
+data/traces/
+data/raw/recordings/
+models/whisper_finetuned/
