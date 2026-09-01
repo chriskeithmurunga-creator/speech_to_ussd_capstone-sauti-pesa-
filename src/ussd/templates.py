@@ -3,7 +3,7 @@
 MENU_TEMPLATES = {
     "check_balance": {
         "title": "Balance Inquiry",
-        "body": "Your current balance is {balance} TZS.",
+        "body": "Your current balance is {balance} KSH.",
         "options": ["1. Back to Menu", "2. Exit"],
     },
     "send_money": {
