@@ -8,7 +8,7 @@ MENU_TEMPLATES = {
     },
     "send_money": {
         "title": "Send Money",
-        "body": "Confirm: Send {amount} TZS to {recipient}?\n1. Yes\n2. No",
+        "body": "Confirm: Send {amount} KSH to {recipient}?\n1. Yes\n2. No",
     },
     "airtime": {
         "title": "Buy Airtime",
