@@ -1,43 +1,27 @@
 from contacts import confirm_contact
-def build_ussd_string(intent, amount=None, number=None):
-    if intent == "SEND_MONEY":
-        return f"*334*1*{number}*{amount}#"
-
-    elif intent == "PAY_BILL":
-        return f"*334*3*{amount}#"
-
-    elif intent == "CHECK_BALANCE":
-        return "*334*4#"
-
-    elif intent == "BUY_AIRTIME":
-        return f"*544*{amount}#"
-
-    elif intent == "BUY_BUNDLES":
-        return f"*544*{amount}#"
-
-    else:
-        return "Unknown intent"
+from src.ussd.generator import generate_response
 
 
-def process_request(intent, amount=None, recipient_name=None, user_reply=None):
-    if intent == "SEND_MONEY":
-        result = confirm_contact(recipient_name, user_reply)
+def process_request(intent, amount=None, recipient_name=None, user_reply=None, service=None):
+   
+    intent = intent.lower()  # match teammate's lowercase intent keys
 
-        if result["status"] == "confirmed":
-            return {"status": "ready", "ussd_string": build_ussd_string(intent, amount, result["number"])}
-        else:
-            return result  
+    slots = {
+        "amount": amount,
+        "service": service,
+    }
 
-    return {"status": "ready", "ussd_string": build_ussd_string(intent, amount)}
+    if intent in ("send_money", "sendmoney"):
+        contact_result = confirm_contact(recipient_name, user_reply)
 
-if __name__ == "__main__":
-    result = process_request("SEND_MONEY", amount=500, recipient_name="John", user_reply=None)
-    print(result)
+        if contact_result["status"] != "confirmed":
+            return contact_result  
 
-    result2 = process_request("SEND_MONEY", amount=500, recipient_name="John", user_reply="yes")
-    print(result2)
+        slots["recipient"] = contact_result["number"]
+        return generate_response(intent, slots)
 
-    result3 = process_request("CHECK_BALANCE")
-    print(result3)
+    # all other intents skip contact resolution entirely
+    slots["recipient"] = recipient_name
+    return generate_response(intent, slots)
 
 
