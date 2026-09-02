@@ -3,12 +3,12 @@
 MENU_TEMPLATES = {
     "check_balance": {
         "title": "Balance Inquiry",
-        "body": "Your current balance is {balance} TZS.",
+        "body": "Your current balance is {balance} KSH.",
         "options": ["1. Back to Menu", "2. Exit"],
     },
     "send_money": {
         "title": "Send Money",
-        "body": "Confirm: Send {amount} TZS to {recipient}?\n1. Yes\n2. No",
+        "body": "Confirm: Send {amount} KSH to {recipient}?\n1. Yes\n2. No",
     },
     "airtime": {
         "title": "Buy Airtime",

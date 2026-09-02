@@ -4,3 +4,11 @@ scikit-learn
 joblib
 numpy
 pandas
+# Whisper fine-tuning + ASR (transformers)
+transformers
+datasets
+accelerate
+huggingface_hub
+# Audio loading/resampling
+soundfile
+librosa

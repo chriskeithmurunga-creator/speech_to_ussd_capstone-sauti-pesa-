@@ -38,10 +38,55 @@ speech-to-ussd/
 
 ```bash
 pip install -r requirements.txt
+
+# Run on an audio file
 python main.py --audio sample.wav
 ```
 
+### Voice recording (microphone)
 
+```bash
+# Record a voice command and run the full pipeline
+python main.py --record
 
+# Record for longer (e.g. 8 seconds)
+python main.py --record --duration 8
+```
 
+### Run from text (skip ASR)
 
+```bash
+python main.py --text "send 5000 to john"
+```
+
+### Voice traceability
+
+Every run is saved to `data/traces/<run_id>/` with the audio clip, the Whisper
+**transcript**, the normalized text, intent, extracted slots, and the final
+USSD output. To inspect them:
+
+```bash
+python main.py --traces          # list runs
+python main.py --trace <run_id>  # view one run as JSON
+
+# Open the browser UI: list runs, play your voice clip, see the transcript
+python main.py --serve
+# then open http://127.0.0.1:8000
+```
+
+### Fine-tuning Whisper on Swahili voice data
+
+First preprocess the raw audio (Vivian's `audio_preprocessor.py`) so
+`data/processed/cleaned_speech_transcripts.csv` exists, then:
+
+```bash
+# Quick sanity check (validates data + inputs only)
+python -m src.asr.finetune_whisper --dry-run
+
+# Real fine-tune (CPU-friendly: whisper-tiny, 3 epochs)
+python -m src.asr.finetune_whisper --epochs 3
+```
+
+The checkpoint is saved to `models/whisper_finetuned/` and is loaded
+automatically by the pipeline. If it is absent, the pipeline falls back to
+the base `openai/whisper-tiny` model.
