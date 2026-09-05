@@ -1,0 +1,5 @@
+,f1_score
+logistic_regression,1.0
+decision_tree,1.0
+random_forest,1.0
+mlp,1.0
