@@ -3,9 +3,9 @@
 # Real Safaricom *334# (M-PESA) menu sequences, mirroring synthetic dataset format
 USSD_SEQUENCES = {
     "send_money": "*334# -> 1 -> {recipient} -> {amount}",
-    "buy_airtime": "*334# -> 3 -> 1 -> {recipient} -> {amount}",
+    "buy_airtime": "*544# -> {amount}",  # Safaricom airtime shortcut, not under *334#
     "check_balance": "*334# -> 6 -> 1",
-    "buy_bundles": "*334# -> 3 -> 2 -> {amount}",
+    "buy_bundles": "*544# -> {amount}",  # bundles are Safaricom self-service, same as airtime
     "pay_bill": "*334# -> 2 -> 1 -> {service} -> {recipient} -> {amount}",
 }
 
@@ -24,7 +24,7 @@ def _amount(slots):
 
 
 def generate_response(intent, slots, status="success"):
-    """Generate a structured USSD response including the *334# sequence."""
+    """Generate a structured USSD response including the *334#/*544# sequence."""
     slots = slots or {}
     response = {
         "intent": intent,
@@ -42,20 +42,20 @@ def generate_response(intent, slots, status="success"):
 
     if intent == "check_balance":
         balance = slots.get("amount", "0")
-        response["ussd_menu"] = f"Your current balance is {balance} TZS."
+        response["ussd_menu"] = f"Your current balance is KSh {balance}."
     elif intent in ("send_money", "sendmoney"):
         response["ussd_menu"] = (
-            f"Send {_amount(slots)} TZS to {_recipient(slots)}?\n"
+            f"Send KSh {_amount(slots)} to {_recipient(slots)}?\n"
             "1. Yes\n2. No"
         )
     elif intent in ("buy_airtime", "airtime"):
         response["ussd_menu"] = "Buy Airtime\nEnter amount:"
     elif intent in ("buy_bundles", "bundles"):
-        response["ussd_menu"] = f"Buy Bundles\nEnter amount ({_amount(slots)}):"
+        response["ussd_menu"] = f"Buy Bundles\nEnter amount (KSh {_amount(slots)}):"
     elif intent in ("pay_bill", "paybill"):
         response["ussd_menu"] = (
             f"Pay Bill\nService: {slots.get('service', '[SERVICE]')}\n"
-            f"Account: {_recipient(slots)}\nAmount: {_amount(slots)}"
+            f"Account: {_recipient(slots)}\nAmount: KSh {_amount(slots)}"
         )
     else:
         response["ussd_menu"] = (
