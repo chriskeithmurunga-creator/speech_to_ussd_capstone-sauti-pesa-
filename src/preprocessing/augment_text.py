@@ -123,7 +123,7 @@ def generate_synthetic_dataset(target_rows: int = 1000) -> list[dict]:
             amount_text=amount_text_val,
             amount_num=amount_num_val,
             service=service_val,
-        )
+        );3
 
         # Stage 5 Slot Extraction: Normalize slots into clean categorical values
         extracted_amount = ""
