@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sauti Pesa</title>
+<link rel="manifest" href="./manifest.json">
+<style>
+  body { margin: 0; background: #060F0C; }
+
+  .app {
+    min-height: 100vh;
+    background: #0B1F1A;
+    color: #EAF3EF;
+    font-family: sans-serif;
+  }
+
+  .screen {
+    display: none;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .screen.active { display: flex; }
+
+  .mic-btn {
+    width: 104px; height: 104px; border-radius: 50%; border: none;
+    background: #17352A; font-size: 40px; cursor: pointer;
+    transition: transform 0.12s ease, background 0.18s ease;
+  }
+  .mic-btn:active { transform: scale(0.96); background: #1E4536; }
+
+  .link-btn {
+    background: none; border: none; color: #86A99B;
+    text-decoration: underline; font-size: 14px; cursor: pointer;
+  }
+
+  .ticket, .message-card {
+    background: #102A21; border: 1px solid rgba(234,245,240,0.1);
+    border-radius: 16px; padding: 24px; width: 100%; max-width: 300px; text-align: left;
+  }
+  .ticket .amount { font-size: 36px; font-weight: 700; color: #45D999; }
+  .ticket .row { display: flex; justify-content: space-between; font-size: 14px; padding: 6px 0; color: #86A99B; }
+  .ticket .row span:last-child { color: #EAF3EF; text-align: right; }
+  .message-card p { margin: 0; font-size: 16px; line-height: 1.5; }
+
+  .btn-row { display: flex; gap: 10px; width: 100%; max-width: 300px; }
+  .btn { flex: 1; padding: 14px; border-radius: 999px; border: none; font-weight: 600; cursor: pointer; }
+  .btn-primary { background: #45D999; color: #06140F; }
+  .btn-secondary { background: transparent; color: #E8654F; border: 1px solid #E8654F; }
+
+  .pin-dots { display: flex; gap: 14px; }
+  .pin-dots .dot {
+    width: 14px; height: 14px; border-radius: 50%;
+    border: 1.5px solid rgba(234,245,240,0.3);
+  }
+  .pin-dots .dot.filled { background: #45D999; border-color: #45D999; }
+
+  .keypad {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    width: 100%; max-width: 260px;
+  }
+  .key {
+    aspect-ratio: 1; border-radius: 50%; border: 1px solid rgba(234,245,240,0.1);
+    background: #102A21; color: #EAF3EF; font-size: 20px; cursor: pointer;
+  }
+
+  .check {
+    width: 64px; height: 64px; border-radius: 50%;
+    border: 2px solid #45D999;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; color: #45D999;
+  }
+  .receipt {
+    background: #102A21; border: 1px solid rgba(234,245,240,0.1);
+    border-radius: 16px; padding: 18px 20px; width: 100%; max-width: 300px; text-align: left;
+  }
+  .receipt .row { display: flex; justify-content: space-between; font-size: 13.5px; padding: 5px 0; color: #86A99B; white-space: pre-wrap; }
+  .receipt .row span:last-child { color: #EAF3EF; text-align: right; }
+
+  .menu-list { width: 100%; max-width: 300px; display: flex; flex-direction: column; gap: 10px; }
+  .menu-option {
+    background: #102A21; border: 1px solid rgba(234,245,240,0.1); border-radius: 12px;
+    padding: 14px 16px; color: #EAF3EF; text-align: left; font-size: 15px; cursor: pointer;
+  }
+  .menu-option:active { background: #17352A; }
+  .menu-option b { color: #45D999; margin-right: 8px; }
+
+  .spinner {
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 3px solid rgba(234,245,240,0.15); border-top-color: #45D999;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .text-input {
+    width: 100%; max-width: 260px; padding: 14px; border-radius: 12px; border: 1px solid rgba(234,245,240,0.2);
+    background: #102A21; color: #EAF3EF; font-size: 18px; text-align: center; box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <section id="screen-idle" class="screen active">
+    <button class="mic-btn" id="micBtn">🎤</button>
+    <p>Tap to speak</p>
+  </section>
+
+  <section id="screen-listening" class="screen">
+    <p>Listening...</p>
+    <p id="transcriptBox" style="min-height: 24px; font-style: italic;"></p>
+    <button class="btn btn-primary" id="stopBtn" style="max-width: 220px;">Tap when done speaking</button>
+    <button class="link-btn" id="cancelBtn">Cancel</button>
+  </section>
+
+  <section id="screen-processing" class="screen">
+    <div class="spinner"></div>
+    <p id="processingText">One moment...</p>
+  </section>
+
+  <section id="screen-confirm" class="screen">
+    <div class="message-card">
+      <p id="confirmMessage">-</p>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-secondary" id="cancelConfirmBtn">No</button>
+      <button class="btn btn-primary" id="confirmBtn">Yes</button>
+    </div>
+    <p style="font-size: 13px; color: #557569;">or say "yes" to confirm, "no" to cancel</p>
+  </section>
+
+  <section id="screen-menu" class="screen">
+    <p id="menuTitle">Choose an option</p>
+    <div class="menu-list" id="menuList"></div>
+    <button class="link-btn" id="cancelMenuBtn">Cancel</button>
+  </section>
+
+  <section id="screen-notfound" class="screen">
+    <p id="notfoundMessage">We couldn't find that contact. Please type the phone number.</p>
+    <input class="text-input" id="notfoundInput" type="tel" placeholder="07XXXXXXXX" inputmode="numeric">
+    <button class="btn btn-primary" id="notfoundSubmitBtn" style="max-width: 220px;">Continue</button>
+    <button class="link-btn" id="cancelNotfoundBtn">Cancel</button>
+  </section>
+
+  <section id="screen-pin" class="screen">
+    <p>Enter your M-Pesa PIN to finish</p>
+    <div class="pin-dots" id="pinDots">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+    <div class="keypad" id="keypad">
+      <button class="key" data-digit="1">1</button>
+      <button class="key" data-digit="2">2</button>
+      <button class="key" data-digit="3">3</button>
+      <button class="key" data-digit="4">4</button>
+      <button class="key" data-digit="5">5</button>
+      <button class="key" data-digit="6">6</button>
+      <button class="key" data-digit="7">7</button>
+      <button class="key" data-digit="8">8</button>
+      <button class="key" data-digit="9">9</button>
+      <span></span>
+      <button class="key" data-digit="0">0</button>
+      <button class="key" data-digit="del">⌫</button>
+    </div>
+    <button class="link-btn" id="cancelPinBtn">Cancel</button>
+  </section>
+
+  <section id="screen-success" class="screen">
+    <div class="check">✓</div>
+    <p>Done</p>
+    <div class="receipt">
+      <div class="row"><span id="sMessage">-</span></div>
+    </div>
+    <button class="btn btn-primary" id="doneBtn" style="max-width: 200px;">Done</button>
+  </section>
+
+</div>
+
+<script>
+  const micBtn = document.getElementById("micBtn");
+  const stopBtn = document.getElementById("stopBtn");
+  const cancelBtn = document.getElementById("cancelBtn");
+  const cancelConfirmBtn = document.getElementById("cancelConfirmBtn");
+  const confirmBtn = document.getElementById("confirmBtn");
+  const cancelPinBtn = document.getElementById("cancelPinBtn");
+  const cancelMenuBtn = document.getElementById("cancelMenuBtn");
+  const cancelNotfoundBtn = document.getElementById("cancelNotfoundBtn");
+  const notfoundInput = document.getElementById("notfoundInput");
+  const notfoundSubmitBtn = document.getElementById("notfoundSubmitBtn");
+  const keypad = document.getElementById("keypad");
+  const doneBtn = document.getElementById("doneBtn");
+  const transcriptBox = document.getElementById("transcriptBox");
+  const confirmMessageEl = document.getElementById("confirmMessage");
+  const menuTitleEl = document.getElementById("menuTitle");
+  const menuListEl = document.getElementById("menuList");
+  const notfoundMessageEl = document.getElementById("notfoundMessage");
+  const processingTextEl = document.getElementById("processingText");
+  const sMessageEl = document.getElementById("sMessage");
+
+  const DEMO_PIN = "1234";
+  let pinBuffer = "";
+
+  // Keith's real Flask backend runs on port 5000 (confirmed from his
+  // api.py). Using the FULL address (not relative paths like "/command")
+  // means this page works even opened directly as a file, since his
+  // flask_cors setup allows cross-origin requests.
+  const BACKEND_URL = "http://127.0.0.1:5000";
+
+  const CONFIG = {
+    WHISPER_ENDPOINT: BACKEND_URL + "/process-voice",
+    COMMAND_ENDPOINT: BACKEND_URL + "/command",
+    GET_MENU_ENDPOINT: BACKEND_URL + "/menu",   // confirmed: no /api prefix
+    // NOTE: these two do NOT exist in Keith's api.py yet. Only /menu is
+    // implemented server-side; select_option/resolve_action have no route.
+    // The multi-level menu flow below is currently unreachable dead code
+    // since handleTranscript() always goes through /command now anyway.
+    SELECT_OPTION_ENDPOINT: BACKEND_URL + "/select-option",
+    RESOLVE_ACTION_ENDPOINT: BACKEND_URL + "/resolve-action",
+    MAX_RECORD_MS: 8000
+  };
+
+  let activeStream = null;
+  let activeRecorder = null;
+  let recordTimeoutId = null;
+
+  let flow = {
+    action: null,
+    params: {},
+    lastResult: null,
+    menuKey: null
+  };
+
+  function showScreen(id) {
+    document.querySelectorAll(".screen").forEach(function (screen) {
+      screen.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+  }
+
+  function showProcessing(text) {
+    processingTextEl.textContent = text || "One moment...";
+    showScreen("screen-processing");
+  }
+
+  function resetToIdle() {
+    flow = { action: null, params: {}, lastResult: null, menuKey: null };
+    pinBuffer = "";
+    if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    stopActiveRecording();
+    if (activeStream) {
+      activeStream.getTracks().forEach(function (t) { t.stop(); });
+      activeStream = null;
+    }
+    showScreen("screen-idle");
+  }
+
+  function speak(text, onDone) {
+    if (!("speechSynthesis" in window)) {
+      if (onDone) onDone();
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.onend = function () { if (onDone) onDone(); };
+    utterance.onerror = function () { if (onDone) onDone(); };
+    window.speechSynthesis.speak(utterance);
+  }
+
+  function recordAndTranscribe(onText, onError) {
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      onError(new Error("Microphone access isn't supported in this browser."));
+      return;
+    }
+
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+      activeStream = stream;
+      const chunks = [];
+      let recorder;
+      try {
+        recorder = new MediaRecorder(stream);
+      } catch (e) {
+        stream.getTracks().forEach(function (t) { t.stop(); });
+        onError(e);
+        return;
+      }
+      activeRecorder = recorder;
+
+      recorder.ondataavailable = function (e) {
+        if (e.data && e.data.size > 0) chunks.push(e.data);
+      };
+
+      recorder.onstop = function () {
+        clearTimeout(recordTimeoutId);
+        stream.getTracks().forEach(function (t) { t.stop(); });
+        activeStream = null;
+        activeRecorder = null;
+
+        if (chunks.length === 0) {
+          onError(new Error("No audio captured."));
+          return;
+        }
+
+        const blob = new Blob(chunks, { type: recorder.mimeType || "audio/webm" });
+        const formData = new FormData();
+        formData.append("audio", blob, "recording.webm");
+
+        fetch(CONFIG.WHISPER_ENDPOINT, { method: "POST", body: formData })
+          .then(function (response) {
+            if (!response.ok) throw new Error("Transcription request failed (" + response.status + ")");
+            return response.json();
+          })
+          .then(function (data) {
+            if (!data || !data.text || !data.text.trim()) {
+              throw new Error("No transcript returned.");
+            }
+            onText(data.text.trim());
+          })
+          .catch(onError);
+      };
+
+      recorder.start();
+      recordTimeoutId = setTimeout(function () {
+        if (recorder.state === "recording") recorder.stop();
+      }, CONFIG.MAX_RECORD_MS);
+    }).catch(onError);
+  }
+
+  function stopActiveRecording() {
+    clearTimeout(recordTimeoutId);
+    if (activeRecorder && activeRecorder.state === "recording") {
+      activeRecorder.stop();
+    }
+  }
+
+  micBtn.addEventListener("click", function () {
+    showScreen("screen-listening");
+    transcriptBox.textContent = "";
+
+    recordAndTranscribe(
+      function (heard) {
+        transcriptBox.textContent = heard;
+        handleTranscript(heard);
+      },
+      function (err) {
+        alert("Couldn't hear you: " + err.message);
+        resetToIdle();
+      }
+    );
+  });
+
+  stopBtn.addEventListener("click", stopActiveRecording);
+  cancelBtn.addEventListener("click", resetToIdle);
+  cancelPinBtn.addEventListener("click", resetToIdle);
+  cancelMenuBtn.addEventListener("click", resetToIdle);
+  cancelNotfoundBtn.addEventListener("click", resetToIdle);
+
+  // Intent classification and slot extraction now happen server-side via
+  // Keith's trained classifier + Lyne's USSD mapping, reached through
+  // POST /command with the raw transcript. The frontend no longer guesses
+  // the intent itself — that logic (classifyIntent, DIRECT_ACTIONS,
+  // extractNumberGroups) has been removed on purpose, per the architecture
+  // note: "remove the frontend classifyIntent() decision entirely."
+
+  // Sends the raw transcript (and, for confirmations, the user's yes/no
+  // reply) to the backend's /command endpoint. Intent classification and
+  // slot extraction happen entirely server-side now.
+  //
+  // ASSUMPTION (confirm with Keith): the confirmation follow-up is sent as
+  // the SAME endpoint with an added `user_reply` field. If the real
+  // contract differs, only this one function needs to change.
+  function sendCommand(text, userReply) {
+    const body = { text: text };
+    if (userReply) body.user_reply = userReply;
+
+    return fetch(CONFIG.COMMAND_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body)
+    }).then(function (response) {
+      if (!response.ok) throw new Error("/command failed (" + response.status + ")");
+      return response.json();
+    });
+  }
+
+  function handleTranscript(heard) {
+    flow.lastTranscript = heard;
+    showProcessing("Understanding your request...");
+
+    sendCommand(heard, null)
+      .then(function (data) { handleCommandResponse(data); })
+      .catch(function (err) {
+        alert("Couldn't process that: " + err.message);
+        resetToIdle();
+      });
+  }
+
+  // data is the FULL /command response:
+  //   { status, text, intent, confidence, slots, result: { status, message, ussd_menu } }
+  // Per the architecture note, we read data.result.status (nested), not
+  // data.status (the outer envelope).
+  function handleCommandResponse(data) {
+    flow.action = data.intent;
+    flow.slots = data.slots || {};
+    const inner = data.result || {};
+
+    switch (inner.status) {
+      case "needs_confirmation":
+        confirmMessageEl.textContent = inner.message;
+        showScreen("screen-confirm");
+        speak(inner.message, function () { listenForYesNo(); });
+        break;
+
+      case "not_found":
+        notfoundMessageEl.textContent = inner.message || "We couldn't find that contact. Please type the phone number.";
+        notfoundInput.value = "";
+        showScreen("screen-notfound");
+        speak(notfoundMessageEl.textContent);
+        break;
+
+      case "cancelled":
+        speak(inner.message || "Okay, cancelled.", resetToIdle);
+        break;
+
+      case "ready":
+      case "success":
+        if ((flow.action || "").toLowerCase() === "check_balance") {
+          goToSuccess(inner.ussd_menu || inner.message);
+        } else {
+          goToPin(inner.ussd_menu || inner.message);
+        }
+        break;
+
+      default:
+        alert("Unexpected response from the backend: " + JSON.stringify(data));
+        resetToIdle();
+    }
+  }
+
+  function listenForYesNo() {
+    recordAndTranscribe(
+      function (heard) {
+        const lower = heard.toLowerCase();
+        if (/\b(yes|yeah|ndio|confirm|correct|sawa)\b/.test(lower)) {
+          confirmTransaction("yes");
+        } else if (/\b(no|hapana|cancel|stop|acha)\b/.test(lower)) {
+          confirmTransaction("no");
+        }
+      },
+      function () {}
+    );
+  }
+
+  function confirmTransaction(reply) {
+    showProcessing("Working on it...");
+    sendCommand(flow.lastTranscript, reply)
+      .then(function (data) { handleCommandResponse(data); })
+      .catch(function (err) {
+        alert("Couldn't reach the backend: " + err.message);
+        resetToIdle();
+      });
+  }
+
+  confirmBtn.addEventListener("click", function () {
+    stopActiveRecording();
+    confirmTransaction("yes");
+  });
+  cancelConfirmBtn.addEventListener("click", function () {
+    stopActiveRecording();
+    confirmTransaction("no");
+  });
+
+  notfoundSubmitBtn.addEventListener("click", function () {
+    const typed = notfoundInput.value.trim();
+    if (!typed) return;
+    // Re-send with the typed phone number appended to the transcript so the
+    // backend's classifier/slot-extractor has a real number to resolve.
+    // ASSUMPTION: confirm with Keith how the backend expects a corrected
+    // phone number to be supplied — this appends it to the original text
+    // as a placeholder approach until that's confirmed.
+    const correctedText = flow.lastTranscript + " " + typed;
+    flow.lastTranscript = correctedText;
+    handleTranscript(correctedText);
+  });
+
+  function callGetMenu(menuKey) {
+    return fetch(CONFIG.GET_MENU_ENDPOINT + "?key=" + encodeURIComponent(menuKey))
+      .then(function (response) {
+        if (!response.ok) throw new Error("get_menu failed (" + response.status + ")");
+        return response.json();
+      });
+  }
+
+  function callSelectOption(menuKey, choice) {
+    return fetch(CONFIG.SELECT_OPTION_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ menu_key: menuKey, choice: choice })
+    }).then(function (response) {
+      if (!response.ok) throw new Error("select_option failed (" + response.status + ")");
+      return response.json();
+    });
+  }
+
+  function callResolveAction(action) {
+    return fetch(CONFIG.RESOLVE_ACTION_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: action })
+    }).then(function (response) {
+      if (!response.ok) throw new Error("resolve_action failed (" + response.status + ")");
+      return response.json();
+    });
+  }
+
+  function startMenuFlow() {
+    showProcessing("Loading menu...");
+    flow.menuKey = "root";
+    callGetMenu("root")
+      .then(renderMenu)
+      .catch(function (err) {
+        alert("Couldn't load the menu: " + err.message);
+        resetToIdle();
+      });
+  }
+
+  function renderMenu(menuResult) {
+    const options = menuResult.options || {};
+    menuListEl.innerHTML = "";
+    let spoken = "Choose an option: ";
+
+    Object.keys(options).forEach(function (key) {
+      const label = options[key];
+      spoken += key + ", " + label + ". ";
+      const btn = document.createElement("button");
+      btn.className = "menu-option";
+      btn.innerHTML = "<b>" + key + "</b>" + label;
+      btn.addEventListener("click", function () { pickMenuOption(key); });
+      menuListEl.appendChild(btn);
+    });
+
+    menuTitleEl.textContent = "Choose an option";
+    showScreen("screen-menu");
+    speak(spoken, function () { listenForMenuChoice(); });
+  }
+
+  function listenForMenuChoice() {
+    recordAndTranscribe(
+      function (heard) {
+        const digitMatch = heard.match(/\d+/);
+        if (digitMatch) {
+          pickMenuOption(digitMatch[0]);
+        }
+      },
+      function () {}
+    );
+  }
+
+  function pickMenuOption(choice) {
+    stopActiveRecording();
+    showProcessing("One moment...");
+    callSelectOption(flow.menuKey, choice)
+      .then(function (result) {
+        if (result.type === "menu") {
+          flow.menuKey = result.menu_key;
+          return callGetMenu(result.menu_key).then(renderMenu);
+        } else if (result.type === "action") {
+          return callResolveAction(result.action).then(function (final) {
+            goToPin(final.ussd_menu || final.message);
+          });
+        } else {
+          throw new Error("Unexpected select_option result");
+        }
+      })
+      .catch(function (err) {
+        alert("Something went wrong: " + err.message);
+        resetToIdle();
+      });
+  }
+
+  let pendingFinalMessage = "";
+
+  function goToPin(finalMessage) {
+    pendingFinalMessage = finalMessage || "";
+    pinBuffer = "";
+    updatePinDots();
+    showScreen("screen-pin");
+    speak("Enter your M-Pesa PIN to finish.");
+  }
+
+  function updatePinDots() {
+    const dots = document.querySelectorAll("#pinDots .dot");
+    dots.forEach(function (dot, index) {
+      dot.classList.toggle("filled", index < pinBuffer.length);
+    });
+  }
+
+  keypad.addEventListener("click", function (event) {
+    const key = event.target.closest(".key");
+    if (!key) return;
+
+    const digit = key.dataset.digit;
+    if (digit === "del") {
+      pinBuffer = pinBuffer.slice(0, -1);
+    } else if (pinBuffer.length < 4) {
+      pinBuffer = pinBuffer + digit;
+    }
+    updatePinDots();
+
+    if (pinBuffer.length === 4) {
+      if (pinBuffer === DEMO_PIN) {
+        goToSuccess(pendingFinalMessage);
+      } else {
+        alert("Wrong PIN, try again.");
+        pinBuffer = "";
+        updatePinDots();
+      }
+    }
+  });
+
+  function goToSuccess(message) {
+    sMessageEl.textContent = message || "Transaction complete.";
+    showScreen("screen-success");
+    speak(message || "Transaction complete.");
+  }
+
+  doneBtn.addEventListener("click", resetToIdle);
+</script>
+</body>
+</html>
