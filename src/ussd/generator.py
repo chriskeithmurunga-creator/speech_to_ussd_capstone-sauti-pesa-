@@ -1,12 +1,17 @@
 """Generate USSD responses from intents and slots."""
 
-# Real Safaricom *334# (M-PESA) menu sequences, mirroring synthetic dataset format
+# M-Pesa USSD sequences used by the Sauti Pesa demo
 USSD_SEQUENCES = {
-    "send_money": "*334# -> 1 -> {recipient} -> {amount}",
-    "buy_airtime": "*544# -> {amount}",  # Safaricom airtime shortcut, not under *334#
-    "check_balance": "*334# -> 6 -> 1",
-    "buy_bundles": "*544# -> {amount}",  # bundles are Safaricom self-service, same as airtime
-    "pay_bill": "*334# -> 2 -> 1 -> {service} -> {recipient} -> {amount}",
+
+    "SEND_MONEY": "*334# -> 1 -> {recipient} -> {amount}",
+
+    "BUY_AIRTIME": "*334# -> 3 -> {amount}",
+
+    "CHECK_BALANCE": "*334# -> 6 -> 1",
+
+    "BUY_BUNDLES": "*544# -> {amount}",
+
+    "PAY_BILL": "*334# -> 2 -> 1 -> {service} -> {recipient} -> {amount}",
 }
 
 
@@ -24,15 +29,20 @@ def _amount(slots):
 
 
 def generate_response(intent, slots, status="success"):
-    """Generate a structured USSD response including the *334#/*544# sequence."""
+    """Generate a structured USSD response."""
     slots = slots or {}
+
+    # Normalize intent names so both uppercase and lowercase work
+    intent_upper = str(intent).upper()
+
     response = {
         "intent": intent,
         "status": status,
         "slots": slots,
         "ussd_menu": None,
         "ussd_sequence": USSD_SEQUENCES.get(
-            intent, "*334# -> 0"
+            intent_upper,
+            "*334# -> 0"
         ).format(
             recipient=_recipient(slots),
             amount=_amount(slots),
@@ -40,26 +50,37 @@ def generate_response(intent, slots, status="success"):
         ),
     }
 
-    if intent == "check_balance":
+    if intent_upper == "CHECK_BALANCE":
         balance = slots.get("amount", "0")
         response["ussd_menu"] = f"Your current balance is KSh {balance}."
-    elif intent in ("send_money", "sendmoney"):
+
+    elif intent_upper == "SEND_MONEY":
         response["ussd_menu"] = (
             f"Send KSh {_amount(slots)} to {_recipient(slots)}?\n"
             "1. Yes\n2. No"
         )
-    elif intent in ("buy_airtime", "airtime"):
-        response["ussd_menu"] = "Buy Airtime\nEnter amount:"
-    elif intent in ("buy_bundles", "bundles"):
-        response["ussd_menu"] = f"Buy Bundles\nEnter amount (KSh {_amount(slots)}):"
-    elif intent in ("pay_bill", "paybill"):
+
+    elif intent_upper == "BUY_AIRTIME":
         response["ussd_menu"] = (
-            f"Pay Bill\nService: {slots.get('service', '[SERVICE]')}\n"
-            f"Account: {_recipient(slots)}\nAmount: KSh {_amount(slots)}"
+            f"Buy Airtime\n"
+            f"Amount: KSh {_amount(slots)}"
         )
+
+    elif intent_upper == "BUY_BUNDLES":
+        response["ussd_menu"] = (
+            f"Buy Bundles\n"
+            f"Amount: KSh {_amount(slots)}"
+        )
+
+    elif intent_upper == "PAY_BILL":
+        response["ussd_menu"] = (
+            f"Pay Bill\n"
+            f"Service: {slots.get('service', '[SERVICE]')}\n"
+            f"Account: {_recipient(slots)}\n"
+            f"Amount: KSh {_amount(slots)}"
+        )
+
     else:
-        response["ussd_menu"] = (
-            "Welcome.\n1. Send Money\n2. Check Balance\n3. Buy Airtime\n4. Exit"
-        )
+        response["ussd_menu"] = "Request received."
 
     return response
