@@ -1,42 +1,48 @@
-// Sauti Pesa — service worker
-// Caches the app shell so it installs cleanly and opens instantly,
-// even with a weak connection. Does NOT cache API calls — once the real
-// backend is connected, /process-voice and /confirm-transaction should
-// always go to the network, not the cache.
+const CACHE_NAME = "sauti-pesa-v2";
 
-const CACHE_NAME = "sauti-pesa-v1";
 const APP_SHELL = [
+  "./",
   "./index.html",
-  "./manifest.json",
-  "./icon-192.png",
-  "./icon-512.png",
+  "./manifest.json"
 ];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL))
+    caches.open(CACHE_NAME)
+      .then((cache) => cache.addAll(APP_SHELL))
+      .then(() => self.skipWaiting())
   );
-  self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((names) =>
-      Promise.all(names.filter((n) => n !== CACHE_NAME).map((n) => caches.delete(n)))
-    )
+    caches.keys().then((keys) =>
+      Promise.all(
+        keys
+          .filter((key) => key !== CACHE_NAME)
+          .map((key) => caches.delete(key))
+      )
+    ).then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
 self.addEventListener("fetch", (event) => {
-  const url = new URL(event.request.url);
+  if (event.request.method !== "GET") {
+    return;
+  }
 
-  // Never cache API calls — always hit the network once the backend exists
-  if (url.pathname.startsWith("/process-voice") || url.pathname.startsWith("/confirm-transaction")) {
+  // Always get the latest HTML from the server.
+  if (event.request.url.includes("/index.html") ||
+      event.request.url.endsWith("/")) {
+    event.respondWith(
+      fetch(event.request, { cache: "no-store" })
+        .catch(() => caches.match("./index.html"))
+    );
     return;
   }
 
   event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request))
+    caches.match(event.request)
+      .then((cached) => cached || fetch(event.request))
   );
 });
