@@ -1,86 +1,42 @@
-"""Generate USSD responses from intents and slots."""
-
-# M-Pesa USSD sequences used by the Sauti Pesa demo
-USSD_SEQUENCES = {
-
-    "SEND_MONEY": "*334# -> 1 -> {recipient} -> {amount}",
-
-    "BUY_AIRTIME": "*334# -> 3 -> {amount}",
-
-    "CHECK_BALANCE": "*334# -> 6 -> 1",
-
-    "BUY_BUNDLES": "*544# -> {amount}",
-
-    "PAY_BILL": "*334# -> 2 -> 1 -> {service} -> {recipient} -> {amount}",
-}
+from contacts import confirm_contact
+from src.ussd.generator import generate_response
 
 
-def _recipient(slots):
-    return (
-        slots.get("recipient")
-        or slots.get("name")
-        or slots.get("phone")
-        or "[RECIPIENT]"
-    )
+def process_request(intent, amount=None, recipient_name=None, user_reply=None, service=None):
+    intent = intent.lower()  
 
-
-def _amount(slots):
-    return slots.get("amount") or "[AMOUNT]"
-
-
-def generate_response(intent, slots, status="success"):
-    """Generate a structured USSD response."""
-    slots = slots or {}
-
-    # Normalize intent names so both uppercase and lowercase work
-    intent_upper = str(intent).upper()
-
-    response = {
-        "intent": intent,
-        "status": status,
-        "slots": slots,
-        "ussd_menu": None,
-        "ussd_sequence": USSD_SEQUENCES.get(
-            intent_upper,
-            "*334# -> 0"
-        ).format(
-            recipient=_recipient(slots),
-            amount=_amount(slots),
-            service=slots.get("service") or "[SERVICE]",
-        ),
+    slots = {
+        "amount": amount,
+        "service": service,
     }
 
-    if intent_upper == "CHECK_BALANCE":
-        balance = slots.get("amount", "0")
-        response["ussd_menu"] = f"Your current balance is KSh {balance}."
+    if intent in ("send_money", "sendmoney"):
+        contact_result = confirm_contact(recipient_name, user_reply)
 
-    elif intent_upper == "SEND_MONEY":
-        response["ussd_menu"] = (
-            f"Send KSh {_amount(slots)} to {_recipient(slots)}?\n"
-            "1. Yes\n2. No"
-        )
+        if contact_result["status"] != "confirmed":
+            return contact_result  
 
-    elif intent_upper == "BUY_AIRTIME":
-        response["ussd_menu"] = (
-            f"Buy Airtime\n"
-            f"Amount: KSh {_amount(slots)}"
-        )
+        slots["recipient"] = contact_result["number"]
+        return generate_response(intent, slots)
 
-    elif intent_upper == "BUY_BUNDLES":
-        response["ussd_menu"] = (
-            f"Buy Bundles\n"
-            f"Amount: KSh {_amount(slots)}"
-        )
+    # all other intents skip contact resolution entirely
+    slots["recipient"] = recipient_name
+    return generate_response(intent, slots)
 
-    elif intent_upper == "PAY_BILL":
-        response["ussd_menu"] = (
-            f"Pay Bill\n"
-            f"Service: {slots.get('service', '[SERVICE]')}\n"
-            f"Account: {_recipient(slots)}\n"
-            f"Amount: KSh {_amount(slots)}"
-        )
 
-    else:
-        response["ussd_menu"] = "Request received."
+if __name__ == "__main__":
+    # Step 1: ask for confirmation
+    result = process_request("SEND_MONEY", amount=500, recipient_name="John", user_reply=None)
+    print(result)
 
-    return response
+    # Step 2: confirmed
+    result2 = process_request("SEND_MONEY", amount=500, recipient_name="John", user_reply="yes")
+    print(result2)
+
+    # Step 3: no contact needed
+    result3 = process_request("CHECK_BALANCE")
+    print(result3)
+
+    # Step 4: pay bill, needs a service name
+    result4 = process_request("PAY_BILL", amount=200, service="KPLC")
+    print(result4)
