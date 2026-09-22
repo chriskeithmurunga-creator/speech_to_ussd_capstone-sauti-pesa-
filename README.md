@@ -16,6 +16,21 @@ Audio → ASR (Whisper) → Normalize → Intent Classification → Slot Extract
 <img width="1536" height="1024" alt="WhatsApp Image 2026-08-24 at 17 43 02" src="https://github.com/user-attachments/assets/ea8c0ac2-b7cf-4507-86e4-238862e1c6ab" />
 
 
+## Team — Sauti Pesa
+Built as a group capstone for the Moringa School Data Science program (Cohort DSF-FT16).
+
+- **Steve Mose** — Integration & Backend (Team Lead)
+- **Damaris Mbaluka** ([@MACRINA-yea](https://github.com/MACRINA-yea)) — Business Understanding
+- **Vivian Ochieng** ([@Vivian-Xy](https://github.com/Vivian-Xy)) — Data & Voice Processing
+- **Joy Seneyian** ([@seneyianjoy-bit](https://github.com/seneyianjoy-bit)) — Data Preprocessing
+- **Keith Chris Murunga** ([@chriskeithmurunga-creator](https://github.com/chriskeithmurunga-creator)) — ASR & Intent Classification
+- **Lyne Chesergon** ([@chesergon](https://github.com/chesergon)) — USSD Mapping
+
+### My contribution (Keith)
+I built the NLP/intent classification component: engineered features from the normalized transcripts, trained and compared four models (Logistic Regression, Decision Tree, Random Forest, MLP), evaluated them by F1 score and confusion matrix, and selected the best-performing model. Full workflow in `notebooks/` and `models/intent_classifier/`.
+
+
+
 ## Project Structure
 
 ```
